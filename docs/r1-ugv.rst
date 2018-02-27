@@ -10,9 +10,9 @@ Model Specifications
 .. image:: ../images/R1Features.jpg
     :width: 800
 
-.. image:: ../images/R1_Dimensions_INCH.jpg
+.. image:: ../images/r1-specs-inch.PNG
     :width: 330
-.. image:: ../images/R1_Dimensions_CM.jpg
+.. image:: ../images/r1-specs-cm.PNG
     :width: 330
 
 
