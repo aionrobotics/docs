@@ -2,6 +2,8 @@
 ROS Robot Configuration
 =======================
 
+.. note:: Documentation is currently being updated to reflect the latest JetPack 3.2 release which has ttyACM USB-Serial support.
+
 .. note:: The R1 "ROS Package" ships "ready-to-code" with all hardware & software fully configured. The information provided below is for troubleshooting, educational or R1 upgrade purposes.
 
 *Easy Button?* `[CLICK HERE] <>`_ *for instructions on flashing a complete, ready to run TX2 image.*
