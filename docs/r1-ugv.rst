@@ -47,7 +47,7 @@ multiple configurations. The following pre-configured packages are available for
 +-----------+-------------------+-------------------+-------------+
 
 
-ArduPilot Package
+ArduPilot Edition
 -----------------
 
 The ArduPilot package leverages ArduPilot, the worlds leading Open Source autopilot software to manage platform tuning and basic autonomous control.
@@ -62,7 +62,7 @@ For control hardware, the ArduPilot package utilizes a Pixhawk 2.1, the most adv
 
 
 
-ROS Package
+ROS Edition
 -----------
 
 The ROS Package is for those looking for a pure ROS controlled robot.
@@ -94,7 +94,7 @@ These modules represent the most advanced computing platform for AI "at the edge
 **Detailed JetPack Info:** `[HERE] <https://developer.nvidia.com/embedded-computing>`_
 
 
-ArduROS Package
+ArduROS Edition
 ---------------
 
 The best of both worlds, the ArduROS package comes with both Pixhawk 2.1 autopilot module running ArduPilot and the Jetson TX2 running ROS.
