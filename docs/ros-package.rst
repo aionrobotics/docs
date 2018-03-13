@@ -25,7 +25,7 @@ ROS Package
 +------------------------------+---+
 |External Antenna Kit (2.4Ghz) | 1 |
 +------------------------------+---+
-|Playstation Controller        | 1 |
+|Bluetooth Controller          | 1 |
 +------------------------------+---+
 |14.8V 5200Ah Smart Battery    | 1 |
 +------------------------------+---+
