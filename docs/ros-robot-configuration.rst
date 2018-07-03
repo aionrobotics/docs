@@ -23,10 +23,6 @@ Jetson TX2 Requirements:
 
   [x] Enable Bluetooth and trust/pair joystick device
 
-To Install Pkgs:
-::
-
-  sudo apt-get install ros-kinetic-PACKAGE
 
 Install JetPack on TX2
 ----------------------
@@ -36,6 +32,11 @@ Detailed instructions on the NVIDIA website `[HERE] <http://docs.nvidia.com/jetp
 Install ROS on the TX2
 ----------------------
 This includes the required packages and utilities. `[HERE] <https://github.com/aionrobotics/installROSTX2>`_
+
+To install specific pkgs:
+::
+
+  sudo apt-get install ros-kinetic-PACKAGE
 
 TX2 Bluetooth Setup
 -------------------
