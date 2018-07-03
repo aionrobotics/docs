@@ -60,6 +60,7 @@ This will print a list of input devices. The Joystick will show up as ``jsX`` or
 
 - Verify Joystick:
 ::
+
   sudo apt-get install jstest-gtk
   jstest /dev/input/js0
 
