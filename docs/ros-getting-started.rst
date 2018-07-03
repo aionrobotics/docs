@@ -65,18 +65,17 @@ Robot Bringup
 
   ssh -X nvidia@<r1-ipaddress>
 
-4. source workspace & launch pkg
+4. launch pkg
 ::
   cd /catkin_ws
-  source devel/setup.bash
   roslaunch r1_control teleop.launch
+
+.. tip:: If "Package not found" ``source devel/setup.bash``
 
 5. System shutdown
 ::
 
   shutdown now
-
-.. caution:: Always remember to perform a system shutdown before turning off the battery.
 
 .. note:: The smart battery shipped with the R1 has a low current cutoff feature. To maintain minimum current requirements, both motor driver and TX2 must be powered on.
 
@@ -102,7 +101,7 @@ Open a new terminal
 
   rqt_graph
 
-.. tip:: To use this tool remotely, you must first export the TX2 display to your remote machine.
+.. tip:: To use rqt_graph remotely, you must first export the TX2 display to your remote machine.
 
 To do so:
 ::
@@ -111,4 +110,4 @@ To do so:
 
 Complete list of tools [HERE]
 
-To learn more about how the package works please check [HERE]
+To learn more about how the package works please check `[HERE] <http://docs.aionrobotics.com/en/latest/ros-robot-configuration.html#>`_

@@ -2,11 +2,7 @@
 ROS Robot Configuration
 =======================
 
-.. note:: Documentation is currently being updated to reflect the latest JetPack 3.2 release which has ttyACM USB-Serial support.
-
-.. note:: The R1 "ROS Package" ships "ready-to-code" with all hardware & software fully configured. The information provided below is for troubleshooting, educational or R1 upgrade purposes.
-
-*Easy Button?* `[CLICK HERE] <>`_ *for instructions on flashing a complete, ready to run TX2 image.*
+.. note:: The R1 "ROS Package" ships "ready-to-code" with all hardware & software fully configured. The information provided below is for troubleshooting, educational or R1 upgrade purposes. This package is an example using the Jetson on board Bluetooth controller. For long range control, it is recommended to connect the bluetooth device to your host computer and communicate with the robot over wifi.
 
 Jetson TX2 Requirements:
 ------------------------
@@ -27,20 +23,29 @@ Jetson TX2 Requirements:
 
   [x] Enable Bluetooth and trust/pair joystick device
 
+To Install Pkgs:
+::
+
+  sudo apt-get install ros-kinetic-PACKAGE
+
 Install JetPack on TX2
 ----------------------
 
 Detailed instructions on the NVIDIA website `[HERE] <http://docs.nvidia.com/jetpack-l4t/2_1/content/developertools/mobile/jetpack/jetpack_l4t/2.0/jetpack_l4t_install.htm>`_
 
-Rebuild Jetson TX2 Kernel
--------------------------
-After Installing JetPack you must rebuild the Kernel to enable support for Serial USB ttyACM0. `[HERE] <https://github.com/aionrobotics/buildJetsonTX2Kernel>`_
-
-.. note:: This step will be phased out upon the official release of JetPack 3.2
-
 Install ROS on the TX2
 ----------------------
 This includes the required packages and utilities. `[HERE] <https://github.com/aionrobotics/installROSTX2>`_
+
+TX2 Bluetooth Setup
+-------------------
+
+::
+
+  sudo rfkill unblock bluetooth
+
+`[Pair & Trust Joystick Device] <https://wiki.gentoo.org/wiki/Sony_DualShock#DualShock_3>`_
+
 
 Joystick Setup
 --------------
@@ -53,20 +58,20 @@ Joystick Setup
 This will print a list of input devices. The Joystick will show up as ``jsX`` or, ``js0`` in our example.
 
 
-- Test Joystick:
+- Verify Joystick:
 ::
-
+  sudo apt-get install jstest-gtk
   jstest /dev/input/js0
 
 Joystick readings will print to screen.
 press ctrl-q to stop process
 
-- Map Joystick to match ROS:
+- To calibrate or map joystick:
 ::
 
-  gstest-gtk /dev/input/js0
+  jstest-gtk /dev/input/js0
 
-.. tip:: If ssh into TX2 you must first export the display to your remote machine.
+.. tip:: If ssh into TX2 you must first export the display to your remote machine. Install jstest-gtk if needed.
 
 To do so:
 ::
@@ -81,7 +86,7 @@ To do so:
 +===============+========+========+
 | Linear Axis   | 1      | No     |
 +---------------+--------+--------+
-| Angular Axis  | 0      | Yes    |
+| Angular Axis  | 0      | No     |
 +---------------+--------+--------+
 | Enable Button | 8      | N/A    |
 +---------------+--------+--------+
@@ -291,9 +296,9 @@ User Adjustable Parameters
   scale_linear: 1
   scale_linear_turbo: 2
   axis_angular: 0
-  scale_angular: 2
-  scale_angular_turbo: 2
+  scale_angular: -2
+  scale_angular_turbo: -2
   enable_button: 8 #L2 trigger
-  enable_turbo_button: 14 #L1 trigger
+  enable_turbo_button: 1 #Thumbstick button
 
 *Note: These changes effect ROS side joystick mapping*
