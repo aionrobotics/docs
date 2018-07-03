@@ -47,6 +47,8 @@ TX2 Bluetooth Setup
 
 `[Pair & Trust Joystick Device] <https://wiki.gentoo.org/wiki/Sony_DualShock#DualShock_3>`_
 
+.. tip:: bluetoothctl be run as root `sudo bluetoothctl`
+
 
 Joystick Setup
 --------------
