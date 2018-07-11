@@ -12,7 +12,7 @@ The stack provided by AION ROBOTICS is intended to provide a quick and easy way 
 |Repo       | Package     | Function                                      | Status   |
 +===========+=============+===============================================+==========+
 | aion_r1   | r1_control  | - Control Autopilot using cmd_vel             | Complete |
-|           |             | - Publish MavROS topics for Autopilot sensors.|          |
+|           |             | - Publish MavROS topics for Autopilot sensors |          |
 |           |             |                                               |          |
 +-----------+-------------+-----------------------------------------------+----------+
 
