@@ -47,4 +47,4 @@ ArduROS Package
 
    Pre-Operation Inspection <arduros-pre-operation-inspection>
    Getting Started <arduros-getting-started>
-   ROS Robot Configuration <arduros-robot-configuration>
+   ArduROS Configuration <arduros-robot-configuration>
