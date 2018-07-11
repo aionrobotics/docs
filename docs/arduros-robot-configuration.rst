@@ -29,7 +29,7 @@ Password: ``apsync``
 
 Install ROS on the TX2
 ----------------------
-Directions`[HERE] <http://wiki.ros.org/kinetic/Installation/Ubuntu>`_
+Directions `[HERE] <http://wiki.ros.org/kinetic/Installation/Ubuntu>`_
 
 
 Install dependencies:
@@ -88,14 +88,14 @@ Move to the ``/opt/ros/kinetic/lib/mavros`` directory
 Configure Autopilot:
 --------------------
 
-Detailed Setup`[HERE] <http://docs.aionrobotics.com/en/latest/ardupilot-package.html>`_
+Detailed Setup `[HERE] <http://docs.aionrobotics.com/en/latest/ardupilot-package.html>`_
 
-Parameter File`[HERE] <https://github.com/ArduPilot/ardupilot/blob/master/Tools/Frame_params/AION_R1_Rover.param>`_
+Parameter File `[HERE] <https://github.com/ArduPilot/ardupilot/blob/master/Tools/Frame_params/AION_R1_Rover.param>`_
 
 Connect Wheel Encoders to Autopilot
 -----------------------------------
 
-Wiring Directions`[HERE] <http://ardupilot.org/copter/docs/common-wheel-encoder.html>`_
+Wiring Directions `[HERE] <http://ardupilot.org/copter/docs/common-wheel-encoder.html>`_
 
 .. note:: The Autopilot parameters settings are pre-configured in the R1 base parameter file.
 
