@@ -13,7 +13,7 @@ Jetson TX2 Requirements:
 
 Build APSync on the TX2
 -------------------------
-Directions`[HERE] <https://github.com/aionrobotics/apsync>`_
+Directions `[HERE] <https://github.com/aionrobotics/apsync>`_
 
 When the UGV boots, a Wifi Access Point is created:
 

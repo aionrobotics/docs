@@ -47,7 +47,7 @@ Robot Bringup
   cd /catkin_ws
   roslaunch r1_control apm.launch
 
-.. note:: UGV must have GPS lock. Documentation for GPS denied/indoor use coming soon.
+.. note:: UGV must have a GPS lock. Documentation for GPS denied/indoor navigation coming soon.
 
 .. tip:: If "Package not found" ``source devel/setup.bash``
 
@@ -81,7 +81,7 @@ Robot Bringup
 
 .. warning:: UGV will move when you output cmd_vel! Be ready to hit stop!
 
-.. note:: This primitive control tool simply publishes cmd_vel messages which MavROS is subscribed to. cmd_vel messages physically control the UGV in the real world and serve as the base for you to build advanced integrations from.
+.. note:: This example control tool works by publishing cmd_vel messages which MavROS is subscribed to. cmd_vel messages are used to physically control the UGV in the real world and serve as the base for you to build advanced integrations from.
 
 11. System shutdown - simply power off the UGV.
 
@@ -108,13 +108,13 @@ Open a new terminal
 
   rqt_graph
 
-.. tip:: To use rqt_graph remotely, you must first export the TX2 display to your remote machine.
+.. tip:: To use rqt_graph remotely, you may need to export the TX2 display to your remote machine.
 
 To do so:
 ::
 
   export DISPLAY=:10
 
-Complete list of tools `[HERE] <http://wiki.ros.org/Tools>`_
+Complete list of ROS tools `[HERE] <http://wiki.ros.org/Tools>`_
 
-To learn more about how the package works please check `[HERE] <http://docs.aionrobotics.com/en/latest/arduros-robot-configuration.html#>`_
+To learn more about how this package works please check `[HERE] <http://docs.aionrobotics.com/en/latest/arduros-robot-configuration.html#>`_
