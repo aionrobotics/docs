@@ -4,6 +4,12 @@ ArduROS Configuration
 
 .. note:: The R1 "ArduROS Package" ships "ready-to-code" with all hardware & software fully configured. The information provided below is for troubleshooting, educational or R1 upgrade purposes.
 
+Pre-Configured ArduROS TX2 Img:
+-------------------------------
+
+`[HERE] <https://www.dropbox.com/s/28dbbkb3vhp9v7p/ArduROS.img.raw.tar.gz?dl=0>`_
+
+
 Jetson TX2 Requirements:
 ------------------------
 
