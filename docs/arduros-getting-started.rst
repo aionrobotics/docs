@@ -79,6 +79,8 @@ Robot Bringup
 
 10. Under the rqt "Plugins" tab, select "Publishers>Robot Steering"
 
+.. warning:: UGV will move when you output cmd_vel! Be ready to hit stop!
+
 .. note:: This primitive control tool simply publishes cmd_vel messages which MavROS is subscribed to. cmd_vel messages physically control the UGV in the real world and serve as the base for you to build advanced integrations from.
 
 11. System shutdown - simply power off the UGV.
