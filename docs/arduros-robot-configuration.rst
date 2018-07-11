@@ -1,10 +1,6 @@
-===================
-Robot Configuration
-===================
-
-=========================
-ArduROS UGV Configuration
-=========================
+=====================
+ArduROS Configuration
+=====================
 
 .. note:: The R1 "ArduROS Package" ships "ready-to-code" with all hardware & software fully configured. The information provided below is for troubleshooting, educational or R1 upgrade purposes.
 
