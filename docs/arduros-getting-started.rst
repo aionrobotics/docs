@@ -52,21 +52,21 @@ Robot Bringup
 .. tip:: If "Package not found" ``source devel/setup.bash``
 
 5. Open another terminal and launch MavProxy
-  ::
+::
     mavproxy.py --mav10 --master :14550 --source-system=89
 
 .. tip:: Allow roughly 30 seconds or so for parameters to download
 
 6. Disable safety switch
-  ::
+::
     arm safetyoff
 
 7. Change Autopilot mode
-  ::
+::
     mode guided
 
 8. Open another terminal and launch rqt
-  ::
+::
     rqt
 
 9. Add topic to publisher
