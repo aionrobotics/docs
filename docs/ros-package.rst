@@ -39,4 +39,4 @@ ROS Package
 
    Pre-Operation Inspection <ros-pre-operation-inspection>
    Getting Started <ros-getting-started>
-   ROS Robot Configuration <ros-robot-configuration>
+   ROS Configuration <ros-robot-configuration>
