@@ -2,27 +2,27 @@
 Getting Started
 ===============
 
-The following documentation provides example ArduROS stack and usage instructions for the R1 ArduROS edition UGV.
+The following documentation provides an example ROS stack and usage instructions for the R1 ArduROS edition UGV.
 
-The stack provided by Aion Robotics is intended to provide a quick and easy way to learn the system as well as give developers a basis for adding their own functionality.
+The stack provided by AION ROBOTICS is intended to provide a quick and easy way to learn the basics as well as give developers a basis for adding their own functionality.
 
 `AION ROBOTICS GitHub <https://github.com/aionrobotics>`_
 
-+-----------+-------------+------------------------------------+----------+
-|Repo       | Package     | Function                           | Status   |
-+===========+=============+====================================+==========+
-| aion_r1   | r1_control  | - Control Autopilot using cmd_vel  | Complete |
-|           |             | - Publish MavROS topics for        |          |
-|           |             | Autopilot sensors.                 |          |
-+-----------+-------------+------------------------------------+----------+
++-----------+-------------+-----------------------------------------------+----------+
+|Repo       | Package     | Function                                      | Status   |
++===========+=============+===============================================+==========+
+| aion_r1   | r1_control  | - Control Autopilot using cmd_vel             | Complete |
+|           |             | - Publish MavROS topics for Autopilot sensors.|          |
+|           |             |                                               |          |
++-----------+-------------+-----------------------------------------------+----------+
 
 **New packages will be added to this list as they are ready for use.**
 
-Expanding on all the excellent features of a stand alone Autopilot, the r1_control pkg uses MavROS to allow for highly advanced slave control of the Autopilot. To enable this on the Autopilot side, it must be Armed, saftey off and switched into "Guideed Mode".
+Expanding on all the excellent features of a stand alone Autopilot, the r1_control pkg uses MavROS to allow for highly advanced "slave" control of the Autopilot. To enable this on the Autopilot side, it must be Armed, saftey off and switched into "Guided Mode".
 
-Physical manual control of the UGV is provided via manual RC style TX by simply switching back to "Manual Mode".
+Manual control of the UGV is provided via RC style TX by simply switching back to "Manual Mode".
 
-For a full list of topics go `[HERE] <http://wiki.ros.org/mavros>`_
+For a full list of MavROS topics see `[HERE] <http://wiki.ros.org/mavros>`_
 
 
 .. tip:: The R1 "ArduROS Package" UGV ships "ready-to-code" with all hardware & software fully configured.
