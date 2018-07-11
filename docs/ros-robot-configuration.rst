@@ -4,6 +4,11 @@ ROS Configuration
 
 .. note:: The R1 "ROS Package" ships "ready-to-code" with all hardware & software fully configured. The information provided below is for troubleshooting, educational or R1 upgrade purposes. This package is an example using the Jetson on board Bluetooth controller. For long range control, it is recommended to connect the bluetooth device to your host computer and communicate with the robot over wifi.
 
+Pre-Configured ROS TX2 Img:
+---------------------------
+
+`[HERE] <https://www.dropbox.com/s/i5pd3yg8mc2h0iy/ros-gold-raw.tar.gz?dl=0>`_
+
 Jetson TX2 Requirements:
 ------------------------
 
