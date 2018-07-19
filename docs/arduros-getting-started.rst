@@ -18,15 +18,23 @@ The stack provided by AION ROBOTICS is intended to provide a quick and easy way 
 
 **New packages will be added to this list as they are ready for use.**
 
-Expanding on all the excellent features of a stand alone Autopilot, the r1_control pkg uses MavROS to allow for highly advanced "slave" control of the Autopilot. To enable this on the Autopilot side, it must be Armed, saftey off and switched into "Guided Mode".
+Expanding on all the excellent waypoint based navigational features of a stand alone Autopilot, the r1_control pkg uses MavROS to allow for highly advanced "slave" control of the Autopilot by simply switching modes. To enable this on the Autopilot side, it must be Armed, saftey off and switched into "Guided Mode".
 
-Manual control of the UGV is provided via RC style TX by simply switching back to "Manual Mode".
+Manual control of the UGV is provided via RC style TX by switching back to "Manual Mode". Quick and easy, waypoint based mission planning is accomplished by switching to "Auto" mode.
 
 For a full list of MavROS topics see `[HERE] <http://wiki.ros.org/mavros>`_
 
 
 .. tip:: The R1 "ArduROS Package" UGV ships "ready-to-code" with all hardware & software fully configured.
 
+
+Calibrate the Autopilot
+-----------------------
+
+See instructions `[HERE] <http://docs.aionrobotics.com/en/latest/ardupilot-mandatory-hardware-setup.html#>`_
+
+The calibration example is provided using Mission Planner Ground Control Station
+`[HERE] <http://ardupilot.org/planner/>`_
 
 Robot Bringup
 -------------
