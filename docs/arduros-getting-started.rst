@@ -59,7 +59,7 @@ Robot Bringup
 
 .. tip:: If "Package not found" ``source devel/setup.bash``
 
-5. Open another terminal and launch MavProxy
+5. Open another terminal and launch `[MAVProxy] <https://ardupilot.github.io/MAVProxy/html/index.html>`_
 ::
     mavproxy.py --mav10 --master :14550 --source-system=89
 
