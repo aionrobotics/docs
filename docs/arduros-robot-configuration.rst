@@ -48,81 +48,34 @@ Jetson TX2 Requirements:
 
 1. The following prerequisites must be installed/setup on NVIDIA Jetson TX2
 
-  [x] NVIDIA Jetpack 3.2.1
+  [x] NVIDIA Jetpack 3.3
 
 Build APSync on the TX2
 -------------------------
-Directions `[HERE] <https://github.com/aionrobotics/apsync>`_
+Directions `[HERE] <https://github.com/aionrobotics/companion/blob/next-tx2/Nvidia_JTX1/Ubuntu/1_create_base_image-tx2.txt>`_
 
 When the UGV boots, a Wifi Access Point is created:
 
-SSID: ``AION_UGV``
+SSID: ``AIONio-XXXX``
 
 Password: ``aionrobotics``
 
-User: ``apsync``
+User: ``aion``
 
-Password: ``apsync``
+Password: ``aion``
 
-``ssh -X apsync@10.0.1.128``
+``ssh -X aion@10.0.1.128``
 
 Install ROS on the TX2
 ----------------------
-Directions `[HERE] <http://wiki.ros.org/kinetic/Installation/Ubuntu>`_
+Use the ``installROS.sh`` script from our `[installROSTX2 GitHub Repo] <https://github.com/aionrobotics/installROSTX2>`_
 
 
-Install dependencies:
+Install MAVROS packages:
 ---------------------
-::
 
-  sudo apt-get install python-rosinstall python-rosinstall-generator python-wstool python-catkin-tools build-essential -y
+Use the ``installMAVROS.sh`` script from our `[installROSTX2 GitHub Repo] <https://github.com/aionrobotics/installROSTX2>`_
 
-
-To install specific ROS pkgs:
-::
-
-  sudo apt-get install ros-kinetic-PACKAGE
-
-Pkgs:
-
-::
-
-  serial
-  mavros
-  rqt
-  rqt-common-plugins
-  rqt-robot-plugins
-  navigation
-  xacro
-  robot-state-publisher
-  joint-state-controller
-  diff-drive-controller
-  robot-localization
-  twist-mux
-  interactive-market-twist-server
-  opencv-apps
-  gazebo-ros
-  gmapping
-  joy
-  diagnostic-aggregator
-  teleop-twist-keyboard
-  teleop-twist-joy
-  image-transport
-  joint-trajectory-controller
-  joint-limits-interface
-  controller-manager
-  razor-imu-9dof
-  imu-transformer
-
-
-Run Geographic Lib script
--------------------------
-
-Move to the ``/opt/ros/kinetic/lib/mavros`` directory
-
-::
-
-  sudo ./install_geographiclib_datasets.sh
 
 Configure Autopilot:
 --------------------
@@ -167,28 +120,30 @@ Configure Motor Driver Firmware
 .. note:: For in-depth setup guide, please refer to the complete user manual located `[HERE] <http://downloads.ionmc.com/docs/roboclaw_user_manual.pdf>`_
 
 
-Build r1_control pkg on the TX2
+Build aion_navigator package on the TX2
 -------------------------------
 
-ssh to the TX2 from a host machine over the AION_UGV wireless network created when the UGV boots.
+.. note:: These packages are installed automatically using the scripts mentioned above in the installROS and installMAVROS sections. The instructions here are only for reference but are not needed if the scripts above are used. Also note that installing the package this way may generate errors if the packages it depends on are not installed. 
 
-``ssh -X apsync@10.0.1.128``
+ssh to the TX2 from a host machine over the wireless network created when the UGV boots (AIONio-XXXX where XXXX are the last four MAC address digits).
 
-Password: ``apsync``
+``ssh -X aion@10.0.1.128``
+
+Password: ``aion``
 
 1. Setup Workspace:
 ::
 
-  mkdir catkin_ws
-  cd catkin_ws
+  mkdir AIONio_ws
+  cd AIONio_ws
   mkdir src
   cd src
 
 
-2. Clone r1_control pkg:
+2. Clone aion_navigator pkg:
 ::
 
-  git clone https://github.com/aionrobotics/aion_r1.git
+  git clone https://github.com/aionrobotics/aion_navigator.git
   cd ..
   catkin_make
 
@@ -196,14 +151,17 @@ Password: ``apsync``
 3. Source:
 ::
 
-  echo "source /home/apsync/catkin_ws/devel/setup.bash" >> ~/.bashrc
+  echo "source /home/apsync/AIONio_ws/devel/setup.bash" >> ~/.bashrc
   source ~/.bashrc
 
-4. Replace APSync mavlink-router config file:
-::
+MAVLINK_ROUTER Configuration
+----------------------------
 
-  cp /home/apsync/catkin_ws/src/aion_r1/r1_control/config/mavlink-router.conf /home/apsync/start_mavlink-router
+ArduPilot's APSync relies on MAVLINK_ROUTER to distribute MAVLINK packets to other nodes that need them. MAVLINK router has a configuration file to tell it to which ports it should send MAVLINK data. If you need to have comunication with the Autopilot using MAVLINK, you will need to modify the configuration to open a port for your application.
 
+To do so, you need to modify the file ``/home/apsync/start_mavlink-router/mavlink-router.conf``
+
+For details on the configuration file usage, checkout the `[mavlink-router GitHub Repo] <https://github.com/intel/mavlink-router>`_
 
 UGV Bringup
 -------------
