@@ -80,7 +80,7 @@ Robot Bringup
 
 8. Verify that the rover is in guided mode by checking the reported mode to the GCS or by trying to move the rover with the RC transmitter (The rover will not move with the transmitter if it is in Guided Mode)
 
-9. To test if ROS is now controlling the rover, publish the cmd_vel topic. Open another terminal, connect to the rover and launch rqt
+9. To test if ROS is now controlling the rover, publish the ``cmd_vel`` topic, to do so open another terminal, connect to the rover and launch rqt
 ::
     rqt
 
@@ -92,13 +92,13 @@ Robot Bringup
 
 ``cmd_vel``
 
-10. Under the rqt "Plugins" tab, select "Publishers>Robot Steering"
+11. Under the rqt "Plugins" tab, select "Publishers>Robot Steering"
 
 .. warning:: UGV will move when you output ``cmd_vel``! Be ready to hit stop!
 
 .. note:: This example control tool works by publishing ``cmd_vel`` messages which MavROS is subscribed to. ``cmd_vel`` messages are used to physically control the UGV in the real world and serve as the base for you to build advanced integrations from.
 
-11. System shutdown - simply power off the UGV.
+12. System shutdown - simply power off the UGV.
 
 Advanced uses
 -------------
@@ -106,6 +106,22 @@ Advanced uses
 For more advanced configuratons of ROS, take a look at the `[Ardupilot Wiki] <http://ardupilot.org/dev/docs/ros.html>`_
 
 A second launch file called ``apm_cartographer.launch`` is provided for launching the ardupilot implementation of cartographer. For more information visit this `[WIKI PAGE] <http://ardupilot.org/dev/docs/ros-cartographer-slam.html>`_
+
+Running ROS nodes on a remote computer
+--------------------------------------
+
+The rover ships with its ROS networking setup configured so that it acts as the ROS Master. You can run ROS nodes and programs on a remote computer by setting up the remote computer to use the rover as a ROS master.
+
+In order for the remote computer to know where the ROS master is, you need to add the follwing lines to your ``.bashrc`` file:
+::
+    export ROS_MASTER_URI=http://IP_OF_ROVER:11311
+    export ROS_HOSTNAME=IP_OF_THIS_COMPUTER
+
+If you are using Ubuntu, you can substitute ``IP_OF_ROVER`` by the hostname of your rover. The hostname is the same as the Wi-Fi network name followed by ``.local``, following our previous example the hostname would be ``AIONio-c71a.local``. Otherwise you will need to substitute it by the actual IP address of the rover. 
+
+Likewise if using Ubuntu, you may substitute ``IP_OF_THIS_COMPUTER`` by your computers hostname followed by ``.local`` or by the computers IP address. 
+
+For more detailed information or troubleshooting tips on configuring ROS networking look at the `[ROS Documentation] <http://wiki.ros.org/turtlebot/Tutorials/indigo/Network%20Configuration>`_
 
 Tools
 -----
@@ -129,7 +145,7 @@ Open a new terminal
 
   rqt_graph
 
-.. tip:: To use rqt_graph remotely, you may need to export the TX2 display to your remote machine.
+.. tip:: To use rqt_graph remotely without setting up ROS networking, you may want to export the TX2 display to your remote machine.
 
 To do so:
 ::
