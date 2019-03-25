@@ -16,8 +16,8 @@ The stack provided by AION ROBOTICS is intended to provide a quick and easy way 
 |                |               |                                               |            |
 +----------------+---------------+-----------------------------------------------+------------+
 | r1_ugv_sim     | r1_description| - URDFs and Mesh Files                        |  Complete  |
-|                | r1_gazebo     | - Gazebo Config and launch files              |  Complete  |
-|                | r1_teleop     | - Simple Teleop node for using an Xbox        |  Untested  |
+|                | r1_gazebo     | - Gazebo Config and launch files              |            |
+|                | r1_teleop     | - Simple Teleop node for using an Xbox        |            |
 |                |               |                                               |            |
 +----------------+---------------+-----------------------------------------------+------------+
 | aion_navigator | aion_navigator| - Basic launch file for MAVROS node           |  Complete  |
