@@ -7,19 +7,6 @@ Getting Started
 
 `AIONio <https://github.com/aionrobotics/aion_navigator>`_ is a base software package for controlling AION ROBOTICS vehicles using ROS.
 
-+----------------+----------------------------------------------+
-|Control Mode    |  Function                                    |
-+================+==============================================+
-| MANUAL         | - Manual control of the vehicle              |
-|                |                                              |
-+----------------+----------------------------------------------+
-|   AUTO         |  - ArduPilot Point-N-Click waypoint missions |
-|                |                                              |
-+----------------+----------------------------------------------+
-| GUIDED         | - ROS slave control of the Autopilot         |
-|                |                                              |
-+----------------+----------------------------------------------+
-
 This stack is intended to provide developers with the base control and communication scheme required for adding their own advanced functionality.
 
 Add on packages are available through AION ROBOTICS.
@@ -60,7 +47,7 @@ Vehicle Bringup
 
 3. The default passphrase to connect to the network is ``aionrobotics``
 
-4. Open a terminal and ssh to the UGV over wireless network
+4. Open a terminal and ssh to the UGV over wireless network:
 ::
 
   ssh -X aion@10.0.1.128
@@ -68,7 +55,7 @@ Vehicle Bringup
 :Username: aion
 :Password: aion
 
-5. launch AIONio
+5. launch AIONio:
 ::
   cd ~/AIONio_ws
   roslaunch aion_control aion_io.launch
@@ -92,6 +79,7 @@ Vehicle Bringup
 
   rostopic echo <topic_name>
 
+7. Follow appropriate vehicle operation guide below. 
 
 UGV Operation
 -------------
@@ -108,23 +96,26 @@ UGV Operation
 ::
     rosrun mavros mavsys mode -c GUIDED
 
-+------------+
-| Modes      |
-+============+
-| MANUAL     |
-+------------+
-| HOLD       |
-+------------+
-| GUIDED     |
-+------------+
++----------------+---------------------------------------------------+
+|Control Mode    |  Function                                         |
++================+===================================================+
+| MANUAL         | - Manual control of the vehicle                   |
+|                |                                                   |
++----------------+---------------------------------------------------+
+|   AUTO         |  - Begin ArduPilot Point-N-Click waypoint mission |
+|                |                                                   |
++----------------+---------------------------------------------------+
+| GUIDED         | - ROS control of Autopilot                        |
+|                |                                                   |
++----------------+---------------------------------------------------+
 
 For full MavROS documentation see `[HERE] <http://wiki.ros.org/mavros>`_
 
-3. To move the vehicle, we must publish  ``cmd_vel`` messages. Open another terminal, connect to the vehicle and launch rqt
+3. To move the vehicle, we must publish  ``cmd_vel`` messages. Open another terminal, connect to the vehicle and launch rqt:
 ::
     rqt
 
-5. Add topic to publisher
+5. Add topic to publisher:
 
 ``/mavros/setpoint_velocity/cmd_vel``
 
@@ -138,28 +129,27 @@ For full MavROS documentation see `[HERE] <http://wiki.ros.org/mavros>`_
 
 .. note:: This example control tool works by publishing ``cmd_vel`` messages which MavROS is subscribed to. ``cmd_vel`` messages are used to physically control the UGV in the real world and serve as the base for you to build advanced integrations from.
 
-12. System shutdown - simply power off the UGV.
 
 Copter Operation
 ----------------
 
-.. warning:: ROS control of UAS is for advanced users only. Read these instructions in full several times before attempting to execute in real life. Safe operation is the responsibility of the user.
+.. warning:: ROS control of UAS is for advanced users only. Read these instructions in full several times before attempting to execute in real life. Safe operation is the responsibility of the user. Serious risk of injury or property damage.
 
 1. Change aircraft mode:
 ::
     rosrun mavros mavsys mode -c GUIDED
 
-+------------+---------------------------------------+
-| Modes      | Function                              |
-+============+=======================================+
-| LOITER     | GPS/Alt stabilized manual flight      |
-+------------+---------------------------------------+
-| RTL        | Return to location when first Armed   |
-+------------+---------------------------------------+
-| GUIDED     | ROS control of Autopilot              |
-+------------+---------------------------------------+
-| LAND       | Lands the aircraft                    |
-+------------+---------------------------------------+
++--------------+-----------------------------------------+
+| Control Mode | Function                                |
++==============+=========================================+
+| LOITER       | - GPS/Alt stabilized manual flight      |
++--------------+-----------------------------------------+
+| RTL          | - Return to location when first Armed   |
++--------------+-----------------------------------------+
+| GUIDED       | - ROS control of Autopilot              |
++--------------+-----------------------------------------+
+| LAND         | - Lands the aircraft                    |
++--------------+-----------------------------------------+
 
 For full MavROS documentation see `[HERE] <http://wiki.ros.org/mavros>`_
 
@@ -167,7 +157,7 @@ For full MavROS documentation see `[HERE] <http://wiki.ros.org/mavros>`_
 ::
     rqt
 
-3. Add topic to publisher
+3. Add topic to publisher:
 
 ``/mavros/setpoint_velocity/cmd_vel``
 
