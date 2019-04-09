@@ -2,6 +2,9 @@
 AIONio
 ======
 
+Getting Started
+---------------
+
 `AIONio <https://github.com/aionrobotics/aion_navigator>`_ is a base software package for controlling AION ROBOTICS vehicles using ROS.
 
 +----------------+----------------------------------------------+
@@ -10,17 +13,16 @@ AIONio
 | MANUAL         | - Manual control of the vehicle              |
 |                |                                              |
 +----------------+----------------------------------------------+
-|   AUTO         |  - ArduPilot Point-N-Click Waypoint Missions |
+|   AUTO         |  - ArduPilot Point-N-Click waypoint missions |
 |                |                                              |
 +----------------+----------------------------------------------+
-| GUIDED         | - ROS slave control of Autopilot             |
+| GUIDED         | - ROS slave control of the Autopilot         |
 |                |                                              |
 +----------------+----------------------------------------------+
 
-This stack is intended to provide developers with a base control and communication scheme required for adding their own advanced functionality.
+This stack is intended to provide developers with the base control and communication scheme required for adding their own advanced functionality.
 
-Add on packages are also available through AION ROBOTICS.
-
+Add on packages are available through AION ROBOTICS.
 
 +----------------+-------------------+----------------------------------------------------------+------------+
 |Repo            | Package           | Function                                                 |   Status   |
@@ -39,10 +41,10 @@ Add on packages are also available through AION ROBOTICS.
 `AION ROBOTICS GitHub <https://github.com/aionrobotics>`_
 
 
-Getting Started - Calibrate Autopilot
--------------------------------------
+Calibrate Autopilot
+-------------------
 
-Instructions `[HERE] <http://docs.aionrobotics.com/en/latest/ardupilot-mandatory-hardware-setup.html#>`_
+UGV Instructions `[HERE] <http://docs.aionrobotics.com/en/latest/ardupilot-mandatory-hardware-setup.html#>`_
 
 The calibration example is provided using Mission Planner Ground Control Station
 `[HERE] <http://ardupilot.org/planner/>`_
@@ -54,14 +56,17 @@ Vehicle Bringup
 
 2. Connect to the wi-fi network with a host computer.
 
-.. tip:: The name of the network is ``AIONio-`` plus the last four hexadecimal digits of the companion computers unique mac address. For example: ``AIONio-c71a``
+.. tip:: The name of the network is ``AIONio-`` plus the last four hexadecimal digits of the vehicles unique mac address. For example: ``AIONio-c71a``
 
 3. The default passphrase to connect to the network is ``aionrobotics``
 
-4. Open a terminal and ssh to the UGV over wireless network using ``aion`` as the username and password
+4. Open a terminal and ssh to the UGV over wireless network
 ::
 
   ssh -X aion@10.0.1.128
+
+:Username: aion
+:Password: aion
 
 5. launch AIONio
 ::
@@ -113,9 +118,9 @@ UGV Operation
 | GUIDED     |
 +------------+
 
-For full MavROS documentation see`[HERE] <http://wiki.ros.org/mavros>`_
+For full MavROS documentation see `[HERE] <http://wiki.ros.org/mavros>`_
 
-3. To test control of the vehicle, we must publish  ``cmd_vel`` messages. To do so open another terminal, connect to the vehicle and launch rqt
+3. To move the vehicle, we must publish  ``cmd_vel`` messages. Open another terminal, connect to the vehicle and launch rqt
 ::
     rqt
 
@@ -128,11 +133,75 @@ For full MavROS documentation see`[HERE] <http://wiki.ros.org/mavros>`_
 ``cmd_vel``
 
 11. Under the rqt "Plugins" tab, select "Publishers>Robot Steering"
+
 .. warning:: UGV will move when you output ``cmd_vel``! Be ready to hit stop!
 
 .. note:: This example control tool works by publishing ``cmd_vel`` messages which MavROS is subscribed to. ``cmd_vel`` messages are used to physically control the UGV in the real world and serve as the base for you to build advanced integrations from.
 
 12. System shutdown - simply power off the UGV.
+
+Copter Operation
+----------------
+
+.. warning:: ROS control of UAS is for advanced users only. Read these instructions in full several times before attempting to execute in real life. Safe operation is the responsibility of the user.
+
+1. Change aircraft mode:
+::
+    rosrun mavros mavsys mode -c GUIDED
+
++------------+---------------------------------------+
+| Modes      | Function                              |
++============+=======================================+
+| LOITER     | GPS/Alt stabilized manual flight      |
++------------+---------------------------------------+
+| RTL        | Return to location when first Armed   |
++------------+---------------------------------------+
+| GUIDED     | ROS control of Autopilot              |
++------------+---------------------------------------+
+| LAND       | Lands the aircraft                    |
++------------+---------------------------------------+
+
+For full MavROS documentation see `[HERE] <http://wiki.ros.org/mavros>`_
+
+2. To control the vehicle while in flight, we must publish  ``cmd_vel`` messages. Open another terminal, connect to the vehicle and launch rqt
+::
+    rqt
+
+3. Add topic to publisher
+
+``/mavros/setpoint_velocity/cmd_vel``
+
+``geometry_msgs/Twist``
+
+``cmd_vel``
+
+4. Under the rqt "Plugins" tab, select "Publishers>Robot Steering".
+
+.. note:: This example control tool works by publishing ``cmd_vel`` messages which MavROS is subscribed to. ``cmd_vel`` messages are used to physically control the UGV in the real world and serve as the base for you to build advanced integrations from. You will use this tool to move the aircraft in flight.
+
+.. warning:: PROPS WILL BEGIN SPINNING WHEN ARMED!
+
+5. Return to the first terminal to Arm the vehicle:
+::
+    rosrun mavros mavsafety arm
+
+.. warning:: PROPS WILL BEGIN SPINNING WHEN ARMED!
+
+.. note:: Vehicle must have a GPS lock to arm. Documentation for GPS denied/indoor navigation coming soon.
+
+.. tip:: You can also Arm using an RC transmitter or GCS such as AION ROBOTICS C3, Mission Planner etc. For instructions see vehicle specific documentation.
+
+6. To take off:
+::
+    rosrun mavros mavcmd takeoff
+
+You will use the "Robot Steering" sliders to move vehicle during flight.
+
+.. warning:: Vehicle will move when you output ``cmd_vel``! Be ready to return slider to zero position to stop! This is a primitive control example only and should NOT be used for normal operation.
+
+7. To land:
+::
+    rosrun mavros mavcmd land
 
 
 Useful Tools
