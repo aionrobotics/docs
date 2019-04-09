@@ -6,4 +6,6 @@ Public Sphinx build [HERE](https://docs.aionrobotics.com)
 
 Dev Sphinx build [HERE](https://docs.aionrobotics.com/en/dev_branch/)
 
-Written in: ReStructuredText
+Written in: **ReStructuredText**
+
+Markup Specification: [HERE](https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst)
