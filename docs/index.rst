@@ -13,8 +13,8 @@ Contents:
 .. toctree::
    :maxdepth: 1
 
-   R Series UGV <r-series>
-   M Series UGV <m-series>
-   Autopilots <autopilots>
-   Computers <computers>
+   AIONio <aionio>
+   Vehicles <vehicles>
+   Autopilot <autopilot>
+   Companion Computer <companion-computer>
    Sensors <sensors>
