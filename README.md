@@ -1,7 +1,6 @@
-# Docs
+# Docs [![Documentation Status](https://readthedocs.org/projects/github-docs/badge/?version=latest)](https://docs.aionrobotics.com/en/latest/?badge=latest)
 
-AION ROBOTICS documentation repo:
-[![Documentation Status](https://readthedocs.org/projects/github-docs/badge/?version=latest)](https://docs.aionrobotics.com/en/latest/?badge=latest)
+AION ROBOTICS documentation repo
 
 Public Sphinx build [HERE](https://docs.aionrobotics.com)
 
