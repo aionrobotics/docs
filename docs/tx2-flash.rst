@@ -7,7 +7,7 @@ TX2 Flashing
 AIONio TX2 System Img:
 ----------------------
 
-`[HERE] <https://www.dropbox.com/s/i5a7q569wa3ckpj/TX2_3.3_ArduROS_Gold.tar.gz?dl=0>`_
+- `[HERE]  <https://aionrobotics-my.sharepoint.com/:u:/p/nickn/ERv2N-CsZ09Cnz986xDi5B4BFJDjCBdXBE18VtLq64iyGA?e=UwWEwT>`_
 
 To clone your TX2:
 ------------------
