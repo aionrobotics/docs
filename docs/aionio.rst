@@ -5,11 +5,36 @@ AIONio
 Getting Started
 ---------------
 
-`AIONio <https://github.com/aionrobotics/aion_navigator>`_ is a base software package for controlling AION ROBOTICS vehicles using ROS.
+`AIONio <https://github.com/aionrobotics/aion_navigator>`_ is a complete system image that enables seamless advanced control of AION ROBOTICS companion computer equipped vehicles.
 
-This stack is intended to provide developers with the base control and communication scheme required for adding their own advanced functionality.
++-----------------------+-------------------------------------+
+| Companion Computer:   |  Recommended Use:                   |
++=======================+=====================================+
+| Jetson TX2            | High performance edge computing     |
++-----------------------+-------------------------------------+
+| Jetson Xavier         | Ultimate performance edge computing |
++-----------------------+-------------------------------------+
 
-Add on packages are available through AION ROBOTICS.
+*:doc:`Jetson hardware info <../companion-computer>`*
+
+AIONio provides developers with the base tools and networking interfaces required to efficiently develop their own advanced projcects.
+
+**Included:**
+
+- Full Ubuntu Operating System
+- ROS installation
+- AIONio ROS control package
+- MavROS - MAVlink communication node
+- Telemetry and Message routing between Autopilot, Companion and remote Computers. (Serial/UDP/TCP)
+- Networking support for:
+  - WLAN - WiFi
+  - LAN - Ethernet, p2p, LTE
+  - Serial
+- H264 video streaming
+- NVIDIA Jetpack
+
+ROS Packages:
+-------------
 
 +----------------+-------------------+----------------------------------------------------------+------------+
 |Repo            | Package           | Function                                                 |   Status   |
@@ -27,6 +52,7 @@ Add on packages are available through AION ROBOTICS.
 
 `AION ROBOTICS GitHub <https://github.com/aionrobotics>`_
 
+*Add on packages are available for purchase from AION ROBOTICS*
 
 Calibrate Autopilot
 -------------------
@@ -41,7 +67,7 @@ Vehicle Bringup
 
 1. Power on the vehicle
 
-2. Connect to the wi-fi network with a host computer.
+2. Connect to the WiFi network with a host computer.
 
 .. tip:: The name of the network is ``AIONio-`` plus the last four hexadecimal digits of the vehicles unique mac address. For example: ``AIONio-c71a``
 
@@ -52,22 +78,21 @@ Vehicle Bringup
 
   ssh -X aion@10.0.1.128
 
-:Username: aion
-:Password: aion
+**Username** ``aion``
+
+**Password** ``aion``
 
 5. launch AIONio:
 ::
   cd ~/AIONio_ws
   roslaunch aion_control aion_io.launch
 
-.. tip:: If you see the error "Package not found" type the following: ``source devel/setup.bash``
-
 6. Verify Autopilot sensors are streaming to ROS:
 
 - To view GPS location:
-  ::
+::
 
-    rostopic echo /mavros/global_position/global
+  rostopic echo /mavros/global_position/global
 
 - To view a list of all ROS topics:
 ::
@@ -79,10 +104,10 @@ Vehicle Bringup
 
   rostopic echo <topic_name>
 
-7. Follow appropriate vehicle operation guide below.
+7. Follow the appropriate vehicle control guide below.
 
-UGV Operation
--------------
+UGV Control
+-----------
 
 1. Arm the vehicle:
 ::
@@ -130,10 +155,10 @@ For full MavROS documentation see `[HERE] <http://wiki.ros.org/mavros>`_
 .. note:: This example control tool works by publishing ``cmd_vel`` messages which MavROS is subscribed to. ``cmd_vel`` messages are used to physically control the UGV in the real world and serve as the base for you to build advanced integrations from.
 
 
-Copter Operation
-----------------
+Copter Control
+--------------
 
-.. warning:: ROS control of UAS is for advanced users only. Read these instructions in full several times before attempting to execute in real life. Safe operation is the responsibility of the user. Serious risk of injury or property damage.
+.. warning:: ROS control of UAS is for advanced users only. Serious risk of injury or property damage! Read these instructions in full several times before attempting to execute in real life. Safe operation is the responsibility of the user.
 
 1. Change aircraft mode:
 ::
@@ -212,18 +237,20 @@ To do so:
 Complete list of ROS tools `[HERE] <http://wiki.ros.org/Tools>`_
 
 
-Running ROS nodes on a remote computer
---------------------------------------
+Running ROS remotely
+--------------------
 
-AION ROBOTICS vehicles ship with ROS networking configured as Master. You can run ROS nodes and programs on a remote computer by setting up the remote computer to use the vehicle as master.
+AION ROBOTICS vehicles ship with ROS networking configured as Master. You can run ROS nodes and programs such as `rviz <http://wiki.ros.org/rviz>`_ on a remote computer by installing ROS and configuring it to use the vehicle as Master.
 
-To point the remote computer to the vehicle (ROS master) add the follwing lines to your ``.bashrc`` file:
+To point the remote computer to the vehicle (ROS Master) add the following lines to its ``.bashrc`` file:
 ::
-    export ROS_MASTER_URI=http://IP_OF_ROVER:11311
+    export ROS_MASTER_URI=http://IP_OF_VEHICLE:11311
     export ROS_HOSTNAME=IP_OF_THIS_COMPUTER
 
-If you are using Ubuntu, you can substitute ``IP_OF_ROVER`` by the hostname of your rover. The hostname is the same as the Wi-Fi network name followed by ``.local``, following our previous example the hostname would be ``AIONio-c71a.local``. Otherwise you will need to substitute it by the actual IP address of the rover.
+If you are using Ubuntu, you can substitute ``IP_OF_VEHICLE`` with the hostname of your vehicle. The hostname is the same as the WiFi network name followed by ``.local``.
 
-Likewise if using Ubuntu, you may substitute ``IP_OF_THIS_COMPUTER`` by your computers hostname followed by ``.local`` or by the computers IP address.
+Following our previous example above, the hostname would be ``AIONio-c71a.local``. Otherwise, you will substitute this with the actual IP address of the vehicle.
+
+Likewise if using Ubuntu, you may substitute ``IP_OF_THIS_COMPUTER`` with your computers hostname followed by ``.local`` or again, with the computers IP address.
 
 For more detailed information or troubleshooting tips on configuring ROS networking look at the `[ROS Documentation] <http://wiki.ros.org/turtlebot/Tutorials/indigo/Network%20Configuration>`_
