@@ -30,11 +30,11 @@ Autopilot Setup
 
   1.6.	**Telemetry Connection**
 
-- If using `[APSync] <http://ardupilot.org/dev/docs/apsync-intro.html>`_ to stream Mavlink over wifi, connect the companion computer to the “Telem2” port.
+- If using `[APSync] <http://ardupilot.org/dev/docs/apsync-intro.html>`_ or AIONio to stream Mavlink over wifi, connect the companion computer to the “Telem2” port.
 
 - If using a long range telemetry radio such as RFD900, connect it to the “Telem1” port.
 
-.. note:: - Telem1 is “Serial 1” under firmware parameters and set at 57600 Baud. - Telem2 is “Serial 2” under firmware parameters and set at 921600 Baud.
+.. note:: - Telem1 is “Serial 1” under firmware parameters and set at 921600 Baud. - Telem2 is “Serial 2” under firmware parameters and set at 921600 Baud.
 ..
 
 .. image:: ../images/autopilot-wiring.jpg
@@ -45,7 +45,7 @@ Autopilot Setup
 2.	Firmware Install:
 ---------------------
 
-Due to popularity, we recommend using Mission Planner for Windows and Tower for Android GCS. However, there are other options available. For Example, QGround Control works on Windows, Mac, IOS, Linux & Android.
+Due to popularity, we recommend using Mission Planner for Windows or QGround Control works on Windows, Mac, IOS, Linux & Android.
 
   1.	**Parameter File**
 
