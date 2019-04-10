@@ -15,7 +15,7 @@ Getting Started
 | Jetson Xavier         | Ultimate performance edge computing |
 +-----------------------+-------------------------------------+
 
-*:doc:`Jetson hardware info <../companion-computer>`*
+:doc:`Jetson Hardware Info <../companion-computer>`
 
 AIONio provides developers with the base tools and networking interfaces required to efficiently develop their own advanced projcects.
 
@@ -27,9 +27,11 @@ AIONio provides developers with the base tools and networking interfaces require
 - MavROS - MAVlink communication node
 - Telemetry and Message routing between Autopilot, Companion and remote Computers. (Serial/UDP/TCP)
 - Networking support for:
+
   - WLAN - WiFi
   - LAN - Ethernet, p2p, LTE
   - Serial
+
 - H264 video streaming
 - NVIDIA Jetpack
 
