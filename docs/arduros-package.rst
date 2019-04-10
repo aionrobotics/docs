@@ -7,4 +7,4 @@ ArduROS Package
 
    Pre-Operation Inspection <arduros-pre-operation-inspection>
    ArduPilot Control <ardupilot-package>
-   AIONio (ROS) <https://docs.aionrobotics.com/en/dev_branch/aionio.html>
+   AIONio (ROS) Control <https://docs.aionrobotics.com/en/dev_branch/aionio.html>
