@@ -35,8 +35,8 @@ AIONio provides developers with the base tools and networking interfaces require
 - H264 video streaming
 - NVIDIA Jetpack
 
-ROS Packages:
--------------
+ROS Packages
+------------
 
 +----------------+-------------------+----------------------------------------------------------+------------+
 |Repo            | Package           | Function                                                 |   Status   |
