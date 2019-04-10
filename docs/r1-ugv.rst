@@ -21,7 +21,7 @@ Model Specifications
 Package Options
 ---------------
 
-The Aion Robotics R1 UGV is a powerful turn-key 4x4 skid-steer rover designed from the ground up to meet the needs of students, enthusiasts and professional research & development teams alike.
+The R1 UGV is a powerful turn-key 4x4 skid-steer rover designed from the ground up to meet the needs of students, enthusiasts and professional research & development teams alike.
 
 A true indoor/outdoor capable robotics platform, its powder coated chassis is made from heavy gauge Aluminum and it rolls on 6" shock absorbing, foam filled tires.
 
@@ -29,8 +29,7 @@ This rover is so powerful its capable of a vertical wall climb given up to 7ft-l
 
 It weighs roughly 11lbs (5Kg) ready-to-run and comes with a front facing window to protect video gear as well as plenty of extra room for add on accessories.
 
-Due to the highly modular nature of the platform, it can be utilized in
-multiple configurations. The following pre-configured packages are available for purchase on the AION ROBOTICS webstore  `[HERE] <https://www.aionrobotics.com/products/>`_
+The following pre-configured packages are available for purchase from the AION ROBOTICS webstore  `[HERE] <https://www.aionrobotics.com/products/>`_
 
 
 .. tabularcolumns:: |c|c|c|
@@ -123,7 +122,7 @@ Running the latest release of JetPack, you'll have access to a full Ubuntu deskt
 .. tabularcolumns:: |c|c|c|
 
 +------------------------------+---+
-|ArduROS Contents              |Qty|
+|ArduROS Contents:             |Qty|
 +==============================+===+
 | Chassis                      | 1 |
 +------------------------------+---+
