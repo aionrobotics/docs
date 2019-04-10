@@ -18,7 +18,7 @@ Jetson TX2 Software
 -------------------
 - `JetPack <http://docs.nvidia.com/jetpack-l4t/2_1/content/developertools/mobile/jetpack/jetpack_l4t/2.0/jetpack_l4t_install.htm>`_
 
-- :doc:`docs/tx2-flash.rst`
+:doc:`TX2 Flashing Instructions <../tx2-flash>`
 
 Jetson AGX Xavier Hardware
 --------------------------
