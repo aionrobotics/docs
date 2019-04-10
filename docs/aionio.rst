@@ -5,7 +5,7 @@ AIONio
 Getting Started
 ---------------
 
-`AIONio <https://github.com/aionrobotics/aion_navigator>`_ is a complete system image that enables seamless advanced control of AION ROBOTICS companion computer equipped vehicles.
+`AIONio <https://github.com/aionrobotics/aion_io_dev>`_ is a complete system image that enables seamless advanced control of AION ROBOTICS companion computer equipped vehicles.
 
 +-----------------------+-------------------------------------+
 | Companion Computer:   |  Recommended Use:                   |
@@ -178,7 +178,6 @@ Copter Control
 | LAND         | - Lands the aircraft                    |
 +--------------+-----------------------------------------+
 
-For full MavROS documentation see `[HERE] <http://wiki.ros.org/mavros>`_
 
 2. To control the vehicle while in flight, we must publish  ``cmd_vel`` messages. Open another terminal, connect to the vehicle and launch rqt
 ::
