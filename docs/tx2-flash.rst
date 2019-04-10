@@ -7,7 +7,7 @@ TX2 Flashing
 AIONio TX2 System Img:
 ----------------------
 
-- `[HERE] <../companion-computer>`
+- :doc:`[HERE] <../companion-computer>`
 
 To clone your TX2:
 ------------------
