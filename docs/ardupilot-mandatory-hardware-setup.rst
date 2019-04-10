@@ -30,8 +30,6 @@ Mandatory Hardware Setup
 
   2.2.	Select **“Calibrate Accel”** and follow instructions
 
-  2.3.	Select **“Calibrate level”** and follow instructions
-
 3.	Compass Calibration
 -----------------------
   3.1.	Select **“Compass”** under the **“INITIAL SETUP -> Mandatory Hardware”** tabs.
