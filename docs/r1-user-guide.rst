@@ -3,7 +3,7 @@ R1 User Guides
 ==============
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
 
     ArduPilot Edition <ardupilot-package>
     ArduROS Edition <aionio>
