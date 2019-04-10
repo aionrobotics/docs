@@ -2,7 +2,7 @@
 Autopilot Documentation
 =======================
 
-For purchasing please visit the Aion Robotics `Webstore. <https://www.aionrobotics.com/products>`_
+Available for purchase `HERE. <https://www.aionrobotics.com/products>`_
 
 Pixhawk 2.1 Autopilot Module
 ----------------------------
