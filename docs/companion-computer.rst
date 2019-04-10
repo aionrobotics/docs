@@ -2,7 +2,7 @@
 Companion Computer Documentation
 ================================
 
-.. image:: ../images/jetson.png
+.. image:: ../images/nvidia-logo.png
    :width: 300
    :align: center
 
@@ -18,7 +18,7 @@ Jetson TX2 Software
 -------------------
 - `JetPack <http://docs.nvidia.com/jetpack-l4t/2_1/content/developertools/mobile/jetpack/jetpack_l4t/2.0/jetpack_l4t_install.htm>`_
 
-:doc:`TX2 Flashing Instructions <../tx2-flash>`
+- :doc:`TX2 Flashing Instructions <../tx2-flash>`
 
 Jetson AGX Xavier Hardware
 --------------------------
