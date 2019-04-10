@@ -40,8 +40,6 @@ multiple configurations. The following pre-configured packages are available for
 +===========+===================+===================+=============+
 | ArduPilot | AutoPilot Control | Pixhawk 2.1       | ArduPilot   |
 +-----------+-------------------+-------------------+-------------+
-| ROS       | Computer Control  | Jetson TX2        | ROS         |
-+-----------+-------------------+-------------------+-------------+
 | ArduROS   | Hybrid Control    | - Pixhawk 2.1     | - ArduPilot |
 |           |                   | - Jetson TX2      | - ROS       |
 +-----------+-------------------+-------------------+-------------+
@@ -59,6 +57,36 @@ Using a Ground Control Station such as `[Mission Planner] <http://ardupilot.org/
 For control hardware, the ArduPilot package utilizes a Pixhawk 2.1, the most advanced civilian grade autopilot module in the world. It boasts top notch features such as a triple redundant power supply, heat stabilized, triple redundant IMU, M8N GPS sensor and on board real time processor. *Aion Robotics does not offer direct px4 support*
 
 **Detailed Pixhawk 2.1 Info:** `[HERE] <http://www.hex.aero/?page_id=317>`_
+
+.. tabularcolumns:: |c|c|c|
+
++---------------------------+---+
+| ArduPilot Contents:       |Qty|
++===========================+===+
+| Chassis                   | 1 |
++---------------------------+---+
+| Wheels + Tires            | 4 |
++---------------------------+---+
+| Motors + Encoders         | 4 |
++---------------------------+---+
+|Motor Controller           | 1 |
++---------------------------+---+
+|Encoder Cables             | 2 |
++---------------------------+---+
+|Micro USB Port             | 1 |
++---------------------------+---+
+|FlySky i6S Transmitter     | 1 |
++---------------------------+---+
+|FlySky FS-IA6 Receiver     | 1 |
++---------------------------+---+
+|R/C Servo Cables           | 3 |
++---------------------------+---+
+|14.8V 5200Ah Smart Battery | 1 |
++---------------------------+---+
+|Pixhawk 2.1 Autopilot      | 1 |
++---------------------------+---+
+|HERE M8N GPS Module        | 1 |
++---------------------------+---+
 
 
 ArduROS Edition
@@ -91,3 +119,41 @@ Running the latest release of JetPack, you'll have access to a full Ubuntu deskt
 **Detailed Jetson Module Info:** `[HERE] <https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/>`_
 
 **Detailed JetPack Info:** `[HERE] <https://developer.nvidia.com/embedded-computing>`_
+
+.. tabularcolumns:: |c|c|c|
+
++------------------------------+---+
+|ArduROS Contents              |Qty|
++==============================+===+
+| Chassis                      | 1 |
++------------------------------+---+
+| Wheels + Tires               | 4 |
++------------------------------+---+
+| Motors + Encoders            | 4 |
++------------------------------+---+
+|Motor Controller              | 1 |
++------------------------------+---+
+|Encoder Cables                | 2 |
++------------------------------+---+
+|Micro USB Port                | 1 |
++------------------------------+---+
+|USB 3.0 Port                  | 1 |
++------------------------------+---+
+|RJ45 Ethernet Port            | 1 |
++------------------------------+---+
+|External Antenna Kit (2.4Ghz) | 1 |
++------------------------------+---+
+|NVIDIA Jetson TX2 Dev Kit     | 1 |
++------------------------------+---+
+|FlySky i6S Transmitter        | 1 |
++------------------------------+---+
+|FlySky FS-IA6 Receiver        | 1 |
++------------------------------+---+
+|R/C Servo Cables              | 3 |
++------------------------------+---+
+|14.8V 5200Ah Smart Battery    | 1 |
++------------------------------+---+
+|Pixhawk 2.1 Autopilot         | 1 |
++------------------------------+---+
+|HERE M8N GPS Module           | 1 |
++------------------------------+---+
