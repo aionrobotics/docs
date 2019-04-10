@@ -11,7 +11,7 @@ AION ROBOTICS `Github <https://www.github.com/aionrobotics/>`_
 Contents:
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    AIONio <aionio>
    Vehicles <vehicles>
