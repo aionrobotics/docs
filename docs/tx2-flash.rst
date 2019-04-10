@@ -7,7 +7,7 @@ TX2 Flashing
 AIONio TX2 System Img:
 ----------------------
 
-- `[HERE]  <https://aionrobotics-my.sharepoint.com/:u:/p/nickn/ERv2N-CsZ09Cnz986xDi5B4BFJDjCBdXBE18VtLq64iyGA?e=UwWEwT>`_
+- `[HERE] <../companion-computer>`
 
 To clone your TX2:
 ------------------
