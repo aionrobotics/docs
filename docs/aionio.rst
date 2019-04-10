@@ -263,3 +263,8 @@ Video streaming is *enabled* by default.
 - To use this feature, simply plug in a `USB Camera <https://www.amazon.com/Logitech-Widescreen-Calling-Recording-Desktop/dp/B006JH8T3S>`_ and it will automatically start an H264 UDP stream to port ``5600``
 
 .. tip:: To access the control panel, type ``10.0.1.128:8000`` into a connected devices web browser.
+
+Factory Reset
+-------------
+
+To factory reset a TX2 equipped vehicle see :doc:`[HERE] <../tx2-flash>`
