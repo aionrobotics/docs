@@ -17,7 +17,7 @@ Getting Started
 
 :doc:`Jetson Hardware Info <../companion-computer>`
 
-AIONio provides developers with the base tools and networking interfaces required to efficiently develop their own advanced projcects.
+Running the latest release of JetPack, you'll have access to a full Ubuntu desktop and all the great features of linux. Whether developing Simultaneous Localization and Mapping applications, Deep Neural Networks, Object Detection and Tracking, AIONio provides an excellent foundation to get you going quickly.
 
 **Included:**
 
