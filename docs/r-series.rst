@@ -13,6 +13,6 @@ The R series represents Aion Robotics smallest weight class platforms.
    :maxdepth: 2
 
    R1 Information <r1-ugv>
-   R1 User Guides <r1-user-guides>
+   R1 User Guide <r1-user-guide>
    R6 Information <r6-ugv>
-   R6 User Guides <r6-user-guides>
+   R6 User Guide <r6-user-guide>
