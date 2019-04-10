@@ -1,7 +1,7 @@
 ======
 AIONio
 ======
-
+.
 Getting Started
 ---------------
 
@@ -79,7 +79,7 @@ Vehicle Bringup
 
   rostopic echo <topic_name>
 
-7. Follow appropriate vehicle operation guide below. 
+7. Follow appropriate vehicle operation guide below.
 
 UGV Operation
 -------------
