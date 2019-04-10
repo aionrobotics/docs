@@ -6,4 +6,4 @@ R1 User Guides
     :maxdepth: 2
 
     ArduPilot Edition <ardupilot-package>
-    ArduROS Edition <aionio>
+    ArduROS Edition <https://docs.aionrobotics.com/en/dev_branch/aionio.html>
