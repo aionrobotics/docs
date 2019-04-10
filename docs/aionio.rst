@@ -1,7 +1,6 @@
 ======
 AIONio
 ======
-.
 
 Getting Started
 ---------------
