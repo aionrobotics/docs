@@ -254,4 +254,12 @@ Following our previous example above, the hostname would be ``AIONio-c71a.local`
 
 Likewise if using Ubuntu, you may substitute ``IP_OF_THIS_COMPUTER`` with your computers hostname followed by ``.local`` or again, with the computers IP address.
 
-For more detailed information or troubleshooting tips on configuring ROS networking look at the `[ROS Documentation] <http://wiki.ros.org/turtlebot/Tutorials/indigo/Network%20Configuration>`_
+For more detailed information or troubleshooting tips on configuring ROS networking look at the `ROS Documentation <http://wiki.ros.org/turtlebot/Tutorials/indigo/Network%20Configuration>`_
+
+Video Streaming
+---------------
+Video streaming is *enabled* by default.
+
+- To use this feature, simply plug in a `USB Camera <https://www.amazon.com/Logitech-Widescreen-Calling-Recording-Desktop/dp/B006JH8T3S>`_ and it will automatically start an H264 UDP stream to port ``5600``
+
+.. tip:: To access the control panel, type ``10.0.1.128:8000`` into a connected devices web browser.
