@@ -6,7 +6,7 @@ Mechanical user guides for AION ROBOTICS vehicles:
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    R Series UGVs <r-series>
    M Series UGVs <m-series>
