@@ -9,6 +9,15 @@ AIONio TX2 System Img:
 
 - :doc:`[HERE] <../companion-computer>`
 
+Prerequisites:
+--------------
+
+You must have a host linux computer with Jetpack installed.
+
+`Install Instructions <https://developer.nvidia.com/embedded/jetpack >`_
+
+
+
 To clone your TX2:
 ------------------
 
@@ -35,9 +44,9 @@ To flash your TX2 with the pre-configured image or your own image:
 
 ``sudo ./flash.sh -r jetson-tx2 mmcblk0p1``
 
-4. For AION's images, after flashing it is required to set the correct hostname and Access Point names to add the last two bytes of the MAC address. To do this log into the TX2 using the following command:
+4. If flashing an AIONio image, after flashing, you must manually set the correct hostname and Access Point names to add the last two bytes of the MAC address. To do this log into the TX2 using the following command:
 
-``ssh apsync@aionugvflash.local``
+``ssh aion@aionugvflash.local``
 
 5. Run the following command to set the hostname and access points and then reboot and check for the correct accesspoint:
 
