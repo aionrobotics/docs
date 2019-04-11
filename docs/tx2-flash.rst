@@ -12,7 +12,7 @@ AIONio TX2 System Img:
 Prerequisites:
 --------------
 
-You must have a host linux computer with Jetpack installed.
+Flash/Cloning scripts must be executed from a host linux computer with NVIDIA Jetpack installed.
 
 `Install Instructions <https://developer.nvidia.com/embedded/jetpack>`_
 
@@ -29,8 +29,8 @@ To clone your TX2:
 
 *This creates a clone.img and clone.img.raw in the <top> directory.*
 
-To flash your TX2 with the pre-configured image or your own image:
-------------------------------------------------------------------
+To flash your TX2 with AIONio image or your own:
+------------------------------------------------
 
 1. Copy clone.img.raw to the <L4T>/bootloader/system.img directory with the following command:
 
