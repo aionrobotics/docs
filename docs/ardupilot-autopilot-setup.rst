@@ -45,7 +45,7 @@ Autopilot Setup
 2.	Firmware Install:
 ---------------------
 
-Due to popularity, we recommend using Mission Planner for Windows and Tower for Android GCS. However, there are other options available. For Example, QGround Control works on Windows, Mac, IOS, Linux & Android.
+Due to popularity, we recommend using Mission Planner for Windows. However, there are other options available. For Example, QGround Control works on Windows, Mac, IOS, Linux & Android.
 
   1.	**Parameter File**
 
