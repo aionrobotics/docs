@@ -35,6 +35,14 @@ Running the latest release of JetPack, you'll have access to a full Ubuntu deskt
 - H264 video streaming
 - NVIDIA Jetpack
 
+  - TensorRT
+  - cuDNN
+  - VisionWorks/OpenCV
+  - CUDA
+  - Multimedia API
+  - L4T
+  - Computer Vision
+
 ROS Packages
 ------------
 
