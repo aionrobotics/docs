@@ -46,7 +46,7 @@ To flash your TX2 with the pre-configured image or your own image:
 
 4. If flashing an AIONio image, after flashing, you must manually set the correct hostname and Access Point names to add the last two bytes of the MAC address. To do this log into the TX2 using the following command:
 
-``ssh aion@aionugvflash.local``
+``ssh aion@aionio-flash.local``
 
 5. Run the following command to set the hostname and access points and then reboot and check for the correct accesspoint:
 
