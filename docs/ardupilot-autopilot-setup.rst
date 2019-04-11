@@ -30,7 +30,7 @@ Autopilot Setup
 
   1.6.	**Telemetry Connection**
 
-- If using `[APSync] <http://ardupilot.org/dev/docs/apsync-intro.html>`_ to stream Mavlink over wifi, connect the companion computer to the “Telem2” port.
+- If using `[APSync] <http://ardupilot.org/dev/docs/apsync-intro.html>`_ or `[AIONio] <http://aionrobotics.com>`_ to stream Mavlink over wifi, connect the companion computer to the “Telem2” port.
 
 - If using a long range telemetry radio such as RFD900, connect it to the “Telem1” port.
 
