@@ -72,7 +72,7 @@ Due to popularity, we recommend using Mission Planner for Windows. However, ther
 
   3.	**Load Parameter File**
 
-    3.1.	Within Mission Planner, select the appropriate COM, Baud ``9600`` and click connect.
+    3.1.	Within Mission Planner, select the appropriate COM, Baud ``115200`` and click connect.
 
     3.2.	Select **“CONFIG/TUNING”** tab
 
