@@ -14,7 +14,7 @@ Prerequisites:
 
 You must have a host linux computer with Jetpack installed.
 
-`Install Instructions <https://developer.nvidia.com/embedded/jetpack >`_
+`Install Instructions <https://developer.nvidia.com/embedded/jetpack>`_
 
 
 
