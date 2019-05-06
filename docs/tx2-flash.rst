@@ -34,7 +34,7 @@ To flash your TX2 with AIONio image or your own:
 
 1. Copy clone.img.raw to the <L4T>/bootloader/system.img directory with the following command:
 
-``sudo cp clone.img.raw bootloader/system.img``
+``mv clone.img.raw bootloader/system.img``
 
 2. If the board has already been flashed with default release images, use the following command to flash the clone image to the APP partition:
 
