@@ -12,7 +12,7 @@ AIONio TX2 System Img:
 Prerequisites:
 --------------
 
-Flash/Cloning scripts must be executed from a host linux computer with NVIDIA Jetpack installed.
+Flash/Cloning scripts must be executed from a host linux computer with NVIDIA Jetpack v3.3 installed.
 
 `Install Instructions <https://developer.nvidia.com/embedded/jetpack>`_
 
