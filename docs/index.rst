@@ -1,4 +1,4 @@
-Aion Robotics Documentation
+AION ROBOTICS Documentation
 ===========================
 
 .. image:: ../images/dirt-m.gif
@@ -6,15 +6,15 @@ Aion Robotics Documentation
 
 General product documentation for all products available from `AION ROBOTICS <https://www.aionrobotics.com/>`_
 
-AION ROBOTICS `Github <https://www.github.com/aionrobotics/>`_
+AION ROBOTICS `GitHub <https://www.github.com/aionrobotics/>`_
 
 Contents:
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
-   R Series UGV <r-series>
-   M Series UGV <m-series>
-   Autopilots <autopilots>
-   Computers <computers>
+   AIONio <aionio>
+   Vehicles <vehicles>
+   Autopilot <autopilot>
+   Companion Computer <companion-computer>
    Sensors <sensors>
