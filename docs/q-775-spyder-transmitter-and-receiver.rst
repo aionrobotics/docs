@@ -8,6 +8,8 @@ The included FrySky i6S transmitter and FS-IA6B receiver come pre-configured fro
     :scale: 50%
     :align: center
 
+**Channel Mapping**
+
 .. tabularcolumns:: |c|c|c|
 
 +---------------------------+-------+
@@ -23,9 +25,11 @@ The included FrySky i6S transmitter and FS-IA6B receiver come pre-configured fro
 +---------------------------+-------+
 | Mode Selection            | 5     |
 +---------------------------+-------+
-|Auxiliary Channel          | 7     |
+| Landing Gear              | 7     |
 +---------------------------+-------+
 
+
+**Switch Functions**
 .. tabularcolumns:: |c|c|c|
 
 +------------+-----------+------------+----------------+--------------------+
@@ -48,6 +52,7 @@ The included FrySky i6S transmitter and FS-IA6B receiver come pre-configured fro
 | SWD        | DOWN      |            |                | LANDING GEAR UP    |
 +------------+-----------+------------+----------------+--------------------+
 
+**Mode Specifications**
 
 .. raw:: html
 
@@ -61,6 +66,7 @@ The included FrySky i6S transmitter and FS-IA6B receiver come pre-configured fro
    <tr><td>Simple/Super Simple</td><td></td><td></td><td>Y</td><td>An add-on to flight modes to use pilot's view instead of yaw orientation</td></tr>
    </table>
 
+**Mode Key**
 
 .. raw:: html
 
