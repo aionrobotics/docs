@@ -10,4 +10,4 @@ Mechanical user guides for AION ROBOTICS vehicles:
 
    R Series UGVs <r-series>
    M Series UGVs <m-series>
-   Q Series UAS <q775-uas>
+   Q-775 Spyder UAS <q-775-spyder>
