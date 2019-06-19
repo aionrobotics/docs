@@ -26,7 +26,6 @@ The included FrySky i6S transmitter and FS-IA6B receiver come pre-configured fro
 |Auxiliary Channel          | 7     |
 +---------------------------+-------+
 
-
 .. tabularcolumns:: |c|c|c|
 
 +------------+-----------+------------+----------------+--------------------+
