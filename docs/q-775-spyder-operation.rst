@@ -28,22 +28,24 @@ SSID: ``AIONio-XXXX``
 
 Password: ``aionrobotics``
 
-``ssh -X aion@10.0.1.128``
-
-User: ``aion``
-
-Password: ``aion``
-
-
   2.2.	Open Mission Planner, select UDP in the upper right hand corner and click “Connect”
 
   2.3.  Choose port `15668`
 
   2.3.	The GCS and Autopilot module will establish a connection.
 
-.. tip:: You can also connect to the autopilot module directly from your internet browser via APweb. To do so, type: 10.0.1.128 into your browser address bar. (Limited functionality)
+.. tip:: You can also connect to the vehicle directly from an internet browser via APweb. To do so, type: 10.0.1.128 into your browser address bar. (Limited functionality)
 ..
 
 3.	Advanced Software Control
 -----------------------------
-See `AIONio <https://docs.aionrobotics.com/en/dev/aionio.html#getting-started>`_
+
+You can SSH to access the onboard computer:
+
+``ssh -X aion@10.0.1.128``
+
+User: ``aion``
+
+Password: ``aion``
+
+See `AIONio <https://docs.aionrobotics.com/en/dev/aionio.html#getting-started>`_ for detailed documentation.
