@@ -1,4 +1,5 @@
-
+Calibration
+===========
 .. caution:: The Q-775 Spyder aircraft comes pre-calibrated from AION ROBOTICS. Should you ever need to recalibrate the aircraft or transmitter, follow the instructions below.
 
 1.	Transmitter Calibration
@@ -6,7 +7,7 @@
 
   1.1.	Turn on Transmitter
 
-  1.2.	Power on the R1 and connect to the GCS via wireless telemetry link.
+  1.2.	Power on the aircraft and connect to the GCS via wireless telemetry link.
 
   1.3.	Select the **“FLIGHT DATA”** tab and look in the HUD to ensure the safety switch is ON (or RED flashing Safety LED)
 
@@ -18,10 +19,10 @@
 
   1.7.	Select **“Calibrate Radio”** and follow instructions
 
-.. tip:: Don’t forget to toggle your Fly Modes and Aux. Button to verify proper function.
+.. tip:: Don’t forget to toggle your Fly Modes to verify proper function.
 ..
 
-  1.8.	Select the **“FLIGHT MODES”** tab and toggle **“Fly Mode 1 - Manual, 2 – Steer and 3 – Auto”**. The corresponding mode should turn green upon activation.
+  1.8.	Select the **“FLIGHT MODES”** tab and toggle **“Fly Mode 1 - Alt Hold, 2 – Loiter and 3 – Auto”**. The corresponding mode should turn green upon activation.
 
 2.	Accel Calibration
 ---------------------
