@@ -90,7 +90,7 @@ Due to popularity, we recommend using Mission Planner for Windows or QGround Con
     3.7.  Select **"Write Params"**
 
     3.8.  Reboot the Pixhawk.
-=======
+
 ===============
 Autopilot Setup
 ===============
