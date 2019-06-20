@@ -61,11 +61,11 @@ The included FrySky i6S transmitter and FS-IA6B receiver come pre-configured fro
 
    <table border="1" class="docutils">
    <tr><th>Mode</th><th>Alt Ctrl</th><th>Pos Ctrl</th><th>GPS</th><th>Summary</th></tr>
-   <tr><td>ALTITUDE HOLD</td><td>s</td><td>+</td><td></td><td>Holds altitude and self-levels the roll & pitch</td></tr>
+   <tr><td>ALTITUDE HOLD</td><td>P</td><td>+</td><td></td><td>Holds altitude and self-levels the roll & pitch</td></tr>
    <tr><td>AUTO</td><td>A</td><td>A</td><td>Y</td><td>Executes pre-defined mission</td></tr>
    <tr><td>GUIDED</td><td>A</td><td>A</td><td>Y</td><td>Navigates to single points commanded by GCS</td></tr>
-   <tr><td>LOITER</td><td>s</td><td>s</td><td>Y</td><td>Holds altitude and position, uses GPS for movements</td></tr>
-   <tr><td>RTL</td><td>A</td><td>A</td><td>Y</td><td>Retruns above takeoff location, may aslo include landing</td></tr>
+   <tr><td>LOITER</td><td>P</td><td>P</td><td>Y</td><td>Holds altitude and position, uses GPS for movements</td></tr>
+   <tr><td>RTL</td><td>A</td><td>A</td><td>Y</td><td>Returns to takeoff location, may also include landing</td></tr>
    </table>
 
 **Mode Function Key:**
@@ -76,6 +76,6 @@ The included FrySky i6S transmitter and FS-IA6B receiver come pre-configured fro
    <tr><th>Symbol</th><th>Definition</th></tr>
    <tr><td>-</td><td>Manual control</td><tr>
    <tr><td>+</td><td>Manual control with limits & self-level</td><tr>
-   <tr><td>s</td><td>Pilot controls climb rate</td></tr>
+   <tr><td>P</td><td>Pilot controls climb rate</td></tr>
    <tr><td>A</td><td>Automatic control</td></tr>
    </table>
