@@ -7,10 +7,10 @@ Pre-Flight Checklist
 - [] Verify Weather
 - [] Verify Airspace
 - [] Verify Flight Plan:
-  - [] Flight path
-  - [] Flight elevation
-  - [] Return To Land (Home location)
-  - [] Identify alternat emergency landing locations
+- [] Flight path
+- [] Flight elevation
+- [] Return To Land (Home location)
+- [] Identify alternat emergency landing locations
 
 **2. Damage Inspection:**
 
@@ -29,6 +29,7 @@ Pre-Flight Checklist
 - [] Verify payload is secure
 
 **4. System Checks:**
+
 - [] Transmitter powered on
 - [] Transmitter battery level <75%
 - [] Aircraft powered on
