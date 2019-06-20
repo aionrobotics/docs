@@ -4,7 +4,7 @@ Transmitter and Receiver
 
 The included FrySky i6S transmitter and FS-IA6B receiver come pre-configured from AION ROBOTICS.
 
-.. image:: ../images/transmitter/FrySky_Callout.jpg
+.. image:: ../images/transmitter/FrySky_Callout.JPG
     :scale: 50%
     :align: center
 
