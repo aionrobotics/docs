@@ -6,8 +6,8 @@ Q-775 Spyder
 
    Getting Started <q-775-spyder-getting-started>
    Transmitter <q-775-spyder-transmitter-and-receiver>
-   Aircraft <ardupilot-mandatory-hardware-setup>
-   Operation <q-775-spyder-operation>
+   Aircraft <q-775-spyder-Aircraft>
    Calibration <q-775-spyder-calibration>
-   Pre-Operation Inspection <q-775-spyder-pre-flight-inspection>
-   First Flight <ardupilot-tuning-guide>
+   Operation <q-775-spyder-operation>
+   Pre-Flight Checklist <q-775-spyder-pre-flight-checklist>
+   First Flight <q-775-spyder-first-flight>
