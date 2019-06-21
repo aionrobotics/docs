@@ -142,7 +142,7 @@ Due to popularity, we recommend using Mission Planner for Windows. However, ther
 
   1.	**Parameter File**
 
-    1.1.	R1 Parameter files can be found on GitHub: `[ArduPilot Package] <https://github.com/ArduPilot/ardupilot/blob/master/Tools/Frame_params/AION_R1_Rover.param>`_
+    1.1.	Sample R1 Parameter files can be found on GitHub: `[ArduPilot Package] <https://github.com/ArduPilot/ardupilot/blob/master/Tools/Frame_params/AION_R1_Rover.param>`_
 
 .. tip:: Unless you specifically need the Parameter file, you can automatically install it directly through Mission Planner as described below.
 ..

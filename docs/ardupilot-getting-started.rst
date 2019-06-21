@@ -6,7 +6,6 @@ Getting Started
 
 All products go through a thorough quality assurance inspection before shipping. However, during the rigors of shipping, damage, loosening and/or shifting of bolts and other hardware can occur.
 
-
 To ensure safe functioning of your UGV please complete a pre-operational inspection immediately upon opening the shipping box. If you suspect damage, take pictures of both the damage and shipping box then notify the shipping carrier and Aion Robotics.
 
 
