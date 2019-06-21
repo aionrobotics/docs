@@ -1,7 +1,9 @@
+===========
+Calibration
+===========
 
-
-1.	Transmitter Calibration
----------------------------
+1. Transmitter Calibration
+--------------------------
 
   1.1.	Turn on Transmitter
 
