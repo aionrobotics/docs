@@ -5,7 +5,7 @@ Q-775 Spyder
 .. toctree::
 
    Getting Started <q-775-spyder-getting-started>
-   Transmitter <q-775-spyder-transmitter-and-receiver>
+   Transmitter <q-775-spyder-transmitter>
    Aircraft <q-775-spyder-Aircraft>
    Calibration <q-775-spyder-calibration>
    Operation <q-775-spyder-operation>

@@ -59,4 +59,6 @@ Calibration
 |Level, Inverted     | 360 Degrees |
 +--------------------+-------------+
 
+  3.5 After calibration is complete. Ensure the vehicles heading is correct using Mission Planners flight control screen. 
+
 .. tip:: A high pitched noise from the aircraft followed by discontinued beeping and GCS confirmation mark completion of calibration. A deep tone, followed by continued calibration beeps marks calibration failure, repeat spinning on each axis.
