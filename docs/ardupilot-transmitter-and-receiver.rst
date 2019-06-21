@@ -19,9 +19,7 @@ The included FrySky i6S transmitter and FS-IA6B receiver come pre-bound from the
 +---------------------------+-------+
 | Mode Selection            | 5     |
 +---------------------------+-------+
-|Save Waypoint              | 7     |
-+---------------------------+-------+
-|Arm/Disarm                 | 8     |
+|Auxiliary Channel          | 7     |
 +---------------------------+-------+
 
 
@@ -77,7 +75,7 @@ The included FrySky i6S transmitter and FS-IA6B receiver come pre-bound from the
 
   6.1.	From Home Screen, press “FLY MODE”
 
-  6.2.	Setup “MANUAL Mode” as pictured:
+  6.2.	Setup “Manual Mode” as pictured:
 
 .. image:: ../images/transmitter/SETUP_MANUAL.jpg
     :width: 350
@@ -86,7 +84,7 @@ The included FrySky i6S transmitter and FS-IA6B receiver come pre-bound from the
 
   6.3.	Flip SWB to the CENTER position
 
-  6.4.	Setup “GUIDED” as pictured
+  6.4.	Setup “Steer Mode” as pictured
 
 .. image:: ../images/transmitter/SETUP_STEER.jpg
     :width: 350
@@ -96,7 +94,7 @@ The included FrySky i6S transmitter and FS-IA6B receiver come pre-bound from the
 
   6.5.	Flip SWB to the LOWER position
 
-  6.6.	Setup “AUTO” as pictured
+  6.6.	Setup “Auto Mode” as pictured
 
 .. image:: ../images/transmitter/SETUP_AUTO.jpg
       :width: 350
@@ -106,7 +104,7 @@ The included FrySky i6S transmitter and FS-IA6B receiver come pre-bound from the
   6.7.	Press back button to return to Home Screen
 
 
-7.	On the Home Screen, verify each “FLY MODE” by moving SWB from UPPER, CENTER and LOWER position. (MODE 1: MANUAL, MODE 2: GUIDED, MODE 3: AUTO)
+7.	On the Home Screen, verify each “FLY MODE” by moving SWB from UPPER, CENTER and LOWER position. (MODE 1: Manual, MODE 2: Steer, MODE 3: Auto)
 
 .. image:: ../images/transmitter/MODE_MANUAL.jpg
     :width: 220
@@ -134,17 +132,3 @@ The included FrySky i6S transmitter and FS-IA6B receiver come pre-bound from the
 .. image:: ../images/transmitter/AUX_7.jpg
     :width: 350
     :align: center
-
-
-9.	Setup – Arm/Disarm Switch
------------------------------
-
-    9.1.	Press Setup button on touch screen
-
-    9.2.	Select “Aux. channels” under “FUNCTION” tab
-
-    9.3.	Scroll to “Channel 8”
-
-    9.4.	Select “SWD”.
-
-    9.5.	Hit return button twice to return to home screen.

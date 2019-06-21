@@ -15,17 +15,17 @@ You should now be ready to test the R1!
 
   1.2.	Turn on the rover
 
-  1.3.	The rover will boot **“Disarmed”** (Transmitter input is ignored)
+  1.3.	The rover will boot into **“Safe Mode”** (Transmitter input is ignored)
 
-  1.4.	Wait for the Autopilot tone to complete and achieve GPS lock (Signaled by Solid GREEN Status LED)
+  1.4.	Wait for the Autopilot tone to complete and achieve GPS lock (Signaled by Solid GREEN Status LED and flashing RED LED around the Safety Button)
 
   1.5.	If equipped with wireless telemetry, connect your GCS to the autopilot.
 
 2.	Manual Control
 ------------------
-  2.1.	Arm the vehicle by moving **"SWD"** into the down position.
+  2.1.	Press and hold the **“Safety Button”** while ensuring Transmitter sticks are centered.
 
-  2.2.	The vehicle will beep and flashing Green LED will turn SOLID signally **“ARMED”**
+  2.2.	The Flashing RED LED will turn SOLID signally **“Safety Off”**
 
   2.3.	 Carefully use the transmitter to move the rover and verify that the direction of travel is correctly matched to the appropriate stick command.
 
