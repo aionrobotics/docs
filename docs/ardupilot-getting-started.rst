@@ -9,6 +9,8 @@ All products go through a thorough quality assurance inspection before shipping.
 
 To ensure safe functioning of your UGV please complete a pre-operational inspection immediately upon opening the shipping box. If you suspect damage, take pictures of both the damage and shipping box then notify the shipping carrier and Aion Robotics.
 
+**All vehicles are shipped from AION ROBOTICS fully preconfigured. You must only follow the calibration procedure and operational guides. All other materials are for informational purposes only.**
+
 
 .. warning::	When removing the top cover, always use extreme caution and remember to carefully disconnect cabling as required. **Failure to do so will damage components.**
 
