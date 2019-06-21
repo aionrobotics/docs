@@ -2,14 +2,6 @@
 Operation
 =========
 
-.. note:: Upon booting the aircraft, it will attempt to acquire a satellite lock as well as check Compass & EKF health.
-
-.. note:: When satellite lock is achieved, the vehicle marks its location as “Home” as can be seen in the “FLIGHT PLAN” tab in your GCS. **This is the location the aircraft will attempt to RTL** (This can be moved manually if desired)
-
-.. warning:: To ensure stable operation, do not fly near tree’s or tall buildings/structures that can block the vehicles line of sight to satellites. Do not fly near ferrous objects that can cause magnetic interference.
-
-.. warning:: Never change vehicle parameters unless you are fully aware of their function and consequences!
-
 1.	Booting The System
 ----------------------
 
@@ -17,11 +9,13 @@ Operation
 
   1.2.	Power on the aircraft by plugging in both batteries.
 
+  .. note:: Upon booting the aircraft, it will attempt to acquire a GPS fix. When a fix is achieved, the vehicle marks its location as “Home” as can be seen in the “FLIGHT PLAN” tab in your GCS. **This is the location the aircraft will attempt to RTL** (If desired, you can move this position manually using the GCS)
+
   1.3. Ensure the aircraft is not disturbed during the IMU calibration procedure. (Rapid RED/BLUE flashing LED)
 
   1.4.	Boot is complete when the Autopilot tones and vehicle achieves GPS lock. (Flashing GREEN LED)
 
-.. tip::	The system boots with safety switch disabled. (Transmitter input is ignored)
+.. tip::	The vehicle boots with safety switch disabled. (Transmitter input is ignored)
 
 2.	Connecting to the Aircraft
 ------------------------------
@@ -32,16 +26,62 @@ SSID: ``AIONio-XXXX``
 
 Password: ``aionrobotics``
 
-  2.2.	Open Mission Planner, select UDP in the upper right hand corner and click “Connect”
+  2.2.	Open Mission Planner, select UDP in the upper right hand corner and click “Connect”.
 
-  2.3.  Choose port `15668`
+  2.3.  Choose port `14558`.
 
   2.3.	The GCS and Autopilot module will establish a connection.
 
-3. Arming the vehicle
----------------------
+3. Avoidance
+------------
 
-  1.1 Always perform a `[Pre-Flight Check] <https://github.com/ArduPilot/ardupilot/blob/master/Tools/Frame_params/AION_R1_Rover.param>`_ 
+.. warning:: Colision avoidance is active in **LOITER** flight mode only.
+
+The Q-775 Spyder is equipped with a RealSense D435i 3D Depth sensor and configured to avoid objects at a distance of **5 meters**.
+
+.. warning:: The sensor is highly sensitive to changing light conditions. This can cause anomalies such as false positives and missed objects. Users should manunally test its sensitivity under varying conditions and never adopt a sense of false security.
+
+- Tall grass or objects within the 5 meter detection zone will prevent the aircraft from arming.
+
+To change parameters, go to Mission Planners **CONFIG/TUNING** screen, select **"Full Parameter Tree"** and search for the below parameters.
+
++----------------------+--------------+----------------+
+| ArduPilot Parameter  | Setting      | Function       |
++======================+==============+================+
+| AVOID_ENABLE         | 0            | Disabled       |
++----------------------+--------------+----------------+
+| AVOID_ENABLE         | 3            | Enabled        |
++----------------------+--------------+----------------+
+| AVOID_BEHAVE         | 0            | Slide          |
++----------------------+--------------+----------------+
+| AVOID_BEHAVE         | 1            | Stop           |
++----------------------+--------------+----------------+
+| AVOID_MARGIN         | 0-10         | Meters         |
++----------------------+--------------+----------------+
+
+After changing a parameter, you must select **"Write"** to save the parameter to the autopilot.
+
+.. tip:: To visualize the detection zone in Mission Planner press `Cntrl-F` and select `Proximity`. 
+
+
+3. Takeoff
+----------
+
+.. warning:: To ensure stable operation, do not fly near tree’s or tall structures that can block the vehicles line of sight to GPS satellites.
+
+.. warning:: Do not fly near ferrous objects that can cause magnetic interference.
+
+.. warning:: Never change vehicle parameters unless you are fully aware of their function and consequences!
+
+.. tip:: In case of sudden irratic or unintended behavior, always be prepared to change the flight mode to **ALTIDUDE HOLD** and manually take control of the aircraft. This mode does not rely on GPS or the onboard Compass.
+
+  1.1 Always perform a `[Pre-Flight Check] <https://docs.aionrobotics.com/en/dev/q-775-spyder-pre-flight-checklist.html>`_
+
+  1.2  To arm the aircraft, hold the left control stick fully down and to the right.
+
+  1.3 The aircraft will arm and props will start spinning.
+
+  1.4 To take off, quickly raise the throttle and release when the aircraft reaches desired elevation.
 
 3.	Advanced Software Control
 -----------------------------

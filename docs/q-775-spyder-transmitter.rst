@@ -55,7 +55,7 @@ The included FrySky i6S transmitter and FS-IA6B receiver come pre-configured fro
 | SWD        | DOWN      |            |                | LANDING GEAR UP    |
 +------------+-----------+------------+----------------+--------------------+
 
-**Mode Specifications:**
+**Flight Mode Specifications:**
 
 .. raw:: html
 

@@ -35,11 +35,16 @@ Pre-Flight Checklist
 - Aircraft powered on
 - Transmitter connected to vehicle
 - Data link connection to Ground Control Station
+- Ensure GCS is configured to display vehicle voltage and current
 - Verify flight battery voltage
 - Verify video stream
 - Verify vehicle has passed all internal Arming checks
 - Verify EKF state healthy
-- Verify vehicle is clear before take-off
+- Verify vehicle is clear before takeoff
+- Disable safet switch
 - Arm vehicle and verify no abnormal vibrations when props begin to spin
 
-**Vehicle ready for take-off**
+**5. Vehicle ready for takeoff:**
+
+- Takeoff to 5-10 meters and hover
+- Check for abnormalities before continuing with flight plan
