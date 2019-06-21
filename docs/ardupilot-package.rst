@@ -10,6 +10,6 @@ ArduPilot Package
    Autopilot Setup <ardupilot-autopilot-setup>
    Motor Controller Setup <ardupilot-motor-controller-setup>
    Wireless Telemetry Connection <ardupilot-wireless-telemetry-connection>
-   Mandatory Hardware Setup <ardupilot-mandatory-hardware-setup>
+   Calibration <ardupilot-calibration>
    Operation <ardupilot-operation>
    Tuning Guide <ardupilot-tuning-guide>

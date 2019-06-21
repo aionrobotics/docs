@@ -67,7 +67,7 @@ ROS Packages
 Calibrate Autopilot
 -------------------
 
-UGV Instructions `[HERE] <http://docs.aionrobotics.com/en/latest/ardupilot-mandatory-hardware-setup.html#>`_
+UGV Instructions `[HERE] <http://docs.aionrobotics.com/en/latest/ardupilot-calibration.html#>`_
 
 The calibration example is provided using Mission Planner Ground Control Station
 `[HERE] <http://ardupilot.org/planner/>`_
