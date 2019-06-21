@@ -1,4 +1,5 @@
 
+
 1.	Transmitter Calibration
 ---------------------------
 
@@ -6,7 +7,7 @@
 
   1.2.	Power on the R1 and connect to the GCS via wireless telemetry link.
 
-  1.3.	Select the **“FLIGHT DATA”** tab and look in the HUD to ensure the safety switch is ON (or RED flashing Safety LED)
+  1.3.	Select the **“FLIGHT DATA”** tab and look in the HUD to ensure the vehicle is disarmed.
 
   1.4.	Select **“INITIAL SETUP”** tab
 
@@ -19,7 +20,7 @@
 .. tip:: Don’t forget to toggle your Fly Modes and Aux. Button to verify proper function.
 ..
 
-  1.8.	Select the **“FLIGHT MODES”** tab and toggle **“Fly Mode 1 - Manual, 2 – Steer and 3 – Auto”**. The corresponding mode should turn green upon activation.
+  1.8.	Select the **“FLIGHT MODES”** tab and toggle **“Fly Mode 1 - MANUAL, 2 – GUIDED and 3 – AUTO”**. The corresponding mode should turn green upon activation.
 
 2.	Accel Calibration
 ---------------------
@@ -65,7 +66,7 @@
 +--------------------+-------------+
 |Level, Tires Up     | 360 Degrees |
 +--------------------+-------------+
-=======
+
 ========================
 Mandatory Hardware Setup
 ========================
