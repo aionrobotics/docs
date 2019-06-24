@@ -9,7 +9,7 @@ Operation
 
   1.2.	Power on the aircraft by plugging in both batteries.
 
-  .. note:: Upon booting, the aircraft will attempt to acquire a GPS fix. When a fix is achieved, the vehicle marks its location as “Home” as can be seen in the “FLIGHT PLAN” tab in your GCS. **This is the location the aircraft will attempt to RTL** (If desired, you can move this position manually using the GCS)
+.. note:: Upon booting, the aircraft will attempt to acquire a GPS fix. When a fix is achieved, the vehicle marks its location as “Home” as can be seen in the “FLIGHT PLAN” tab in your GCS. **This is the location the aircraft will attempt to RTL** (If desired, you can move this position manually using the GCS)
 
   1.3. Ensure the aircraft is not disturbed during the IMU calibration procedure. (Rapid RED/BLUE flashing LED)
 
@@ -75,11 +75,11 @@ After changing a parameter, you must select **"Write"** to save the parameter to
 
 .. tip:: In case of sudden irratic or unintended behavior, always be prepared to change the flight mode to **ALTIDUDE HOLD** and manually take control of the aircraft. This mode does not rely on GPS or the onboard Compass.
 
-  4.1 Always perform a `[Pre-Flight Check] <https://docs.aionrobotics.com/en/dev/q-775-spyder-pre-flight-checklist.html>`_
+ 4.1 Always perform a `[Pre-Flight Check] <https://docs.aionrobotics.com/en/dev/q-775-spyder-pre-flight-checklist.html>`_
 
-  4.2 Put the aircraft in `LOITER` flight moode.
+ 4.2 Put the aircraft in `LOITER` flight moode.
 
-  4.3  To arm the aircraft, hold the left control stick fully down and to the right.
+ 4.3  To arm the aircraft, hold the left control stick fully down and to the right.
 
 .. tip:: If the aircraft will not arm please see: `[Understanding ArduPilot mandatory onboard pre-arm safety checks] <http://ardupilot.org/copter/docs/prearm_safety_check.html>`_
 
@@ -102,13 +102,13 @@ After changing a parameter, you must select **"Write"** to save the parameter to
 6. Auto Takeoff
 ---------------
 
- .. warning:: To ensure stable operation, do not fly near tree’s or tall structures that can block the vehicles line of sight to GPS satellites.
+.. warning:: To ensure stable operation, do not fly near tree’s or tall structures that can block the vehicles line of sight to GPS satellites.
 
- .. warning:: Do not fly near ferrous objects that can cause magnetic interference.
+.. warning:: Do not fly near ferrous objects that can cause magnetic interference.
 
- .. warning:: **Never** change vehicle parameters unless you are fully aware of their function and consequences!
+.. warning:: **Never** change vehicle parameters unless you are fully aware of their function and consequences!
 
- .. tip:: In case of sudden irratic or unintended behavior, always be prepared to change the flight mode to **ALTIDUDE HOLD** and manually take control of the aircraft. This mode does not rely on GPS or the onboard Compass.
+.. tip:: In case of sudden irratic or unintended behavior, always be prepared to change the flight mode to **ALTIDUDE HOLD** and manually take control of the aircraft. This mode does not rely on GPS or the onboard Compass.
 
 
  6.1 Always perform a `[Pre-Flight Check] <https://docs.aionrobotics.com/en/dev/q-775-spyder-pre-flight-checklist.html>`_
