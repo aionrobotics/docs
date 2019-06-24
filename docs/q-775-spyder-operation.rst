@@ -81,7 +81,7 @@ After changing a parameter, you must select **"Write"** to save the parameter to
 
   4.3  To arm the aircraft, hold the left control stick fully down and to the right.
 
-.. tip:: If the aircraft will not arm please see: `[Understanding ArduPilot mandatory onboard pre-arm safety checks] <http://ardupilot.org/copter/docs/prearm_safety_check.html>`_ 
+.. tip:: If the aircraft will not arm please see: `[Understanding ArduPilot mandatory onboard pre-arm safety checks] <http://ardupilot.org/copter/docs/prearm_safety_check.html>`_
 
   4.4 The aircraft will arm and props will start spinning.
 
@@ -90,6 +90,7 @@ After changing a parameter, you must select **"Write"** to save the parameter to
   4.6 Move SWD to the down position to raise landing gear.
 
 .. tip:: The highest risk of a crash is just before and after takeoff, when in close proximity to the ground.
+
 
 5. Manual Landing
 -----------------
@@ -109,6 +110,8 @@ After changing a parameter, you must select **"Write"** to save the parameter to
 
  .. tip:: In case of sudden irratic or unintended behavior, always be prepared to change the flight mode to **ALTIDUDE HOLD** and manually take control of the aircraft. This mode does not rely on GPS or the onboard Compass.
 
+
+
    6.1 Always perform a `[Pre-Flight Check] <https://docs.aionrobotics.com/en/dev/q-775-spyder-pre-flight-checklist.html>`_
 
    6.2 Create a waypoint mission using Mission Planner. `[For detailed info see here] <http://ardupilot.org/copter/docs/common-mission-planning.html>`_
@@ -127,7 +130,7 @@ After changing a parameter, you must select **"Write"** to save the parameter to
  7.1 If configured to do so within your mission, the aircraft will land itself at the location you specified.
 
 
-3.	Advanced Software Control
+8.	Advanced Software Control
 -----------------------------
 
 You can SSH to access the onboard computer:
