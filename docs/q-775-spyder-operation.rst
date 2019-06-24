@@ -83,11 +83,11 @@ After changing a parameter, you must select **"Write"** to save the parameter to
 
 .. tip:: If the aircraft will not arm please see: `[Understanding ArduPilot mandatory onboard pre-arm safety checks] <http://ardupilot.org/copter/docs/prearm_safety_check.html>`_
 
-  4.4 The aircraft will arm and props will start spinning.
+ 4.4 The aircraft will arm and props will start spinning.
 
-  4.5 To take off, quickly raise the throttle and release when the aircraft reaches desired elevation.
+ 4.5 To take off, quickly raise the throttle and release when the aircraft reaches desired elevation.
 
-  4.6 Move SWD to the down position to raise landing gear.
+ 4.6 Move SWD to the down position to raise landing gear.
 
 .. tip:: The highest risk of a crash is just before and after takeoff, when in close proximity to the ground.
 
