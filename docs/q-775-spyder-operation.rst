@@ -5,32 +5,32 @@ Operation
 1.	Booting The System
 ----------------------
 
-  1.1.	Turn on the Transmitter
+ 1.1.	Turn on the Transmitter
 
-  1.2.	Power on the aircraft by plugging in both batteries.
+ 1.2.	Power on the aircraft by plugging in both batteries.
 
 .. note:: Upon booting, the aircraft will attempt to acquire a GPS fix. When a fix is achieved, the vehicle marks its location as “Home” as can be seen in the “FLIGHT PLAN” tab in your GCS. **This is the location the aircraft will attempt to RTL** (If desired, you can move this position manually using the GCS)
 
-  1.3. Ensure the aircraft is not disturbed during the IMU calibration procedure. (Rapid RED/BLUE flashing LED)
+ 1.3. Ensure the aircraft is not disturbed during the IMU calibration procedure. (Rapid RED/BLUE flashing LED)
 
-  1.4.	Boot is complete when the Autopilot tones and vehicle achieves GPS lock. (Flashing GREEN LED)
+ 1.4.	Boot is complete when the Autopilot tones and vehicle achieves GPS lock. (Flashing GREEN LED)
 
 .. tip::	The vehicle boots with safety switch disabled. (Transmitter input is ignored)
 
 2.	Connecting to the Aircraft
 ------------------------------
 
-  2.1.	On the device Mission Planner is installed on, go to your wireless settings and look for the aircrafts wireless ID.
+ 2.1.	On the device Mission Planner is installed on, go to your wireless settings and look for the aircrafts wireless ID.
 
 SSID: ``AIONio-XXXX``
 
 Password: ``aionrobotics``
 
-  2.2.	Open Mission Planner, select UDP in the upper right hand corner and click “Connect”.
+ 2.2.	Open Mission Planner, select UDP in the upper right hand corner and click “Connect”.
 
-  2.3.  Choose port `14558`.
+ 2.3.  Choose port `14558`.
 
-  2.3.	The GCS and Autopilot module will establish a connection.
+ 2.3.	The GCS and Autopilot module will establish a connection.
 
 3. Avoidance
 ------------
