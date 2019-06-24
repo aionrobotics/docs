@@ -111,16 +111,15 @@ After changing a parameter, you must select **"Write"** to save the parameter to
  .. tip:: In case of sudden irratic or unintended behavior, always be prepared to change the flight mode to **ALTIDUDE HOLD** and manually take control of the aircraft. This mode does not rely on GPS or the onboard Compass.
 
 
+ 6.1 Always perform a `[Pre-Flight Check] <https://docs.aionrobotics.com/en/dev/q-775-spyder-pre-flight-checklist.html>`_
 
-   6.1 Always perform a `[Pre-Flight Check] <https://docs.aionrobotics.com/en/dev/q-775-spyder-pre-flight-checklist.html>`_
+ 6.2 Create a waypoint mission using Mission Planner. `[For detailed info see here] <http://ardupilot.org/copter/docs/common-mission-planning.html>`_
 
-   6.2 Create a waypoint mission using Mission Planner. `[For detailed info see here] <http://ardupilot.org/copter/docs/common-mission-planning.html>`_
+ 6.3 **Write** the waypoints to the vehicle.
 
-   6.3 **Write** the waypoints to the vehicle.
+ 6.4 Select **"Read Waypoints"** to verify the mission uploaded successfully.
 
-   6.4 Select **"Read Waypoints"** to verify the mission uploaded successfully.
-
-   6.5 When you switch the aircraft into `AUTO` flight mode, the vehicle will Arm itself, take off and proceed with the mission.
+ 6.5 When you switch the aircraft into `AUTO` flight mode, the vehicle will Arm itself, take off and proceed with the mission.
 
 .. tip:: You can change flight modes at any time during an Auto mission to regain control of the aircraft.
 
