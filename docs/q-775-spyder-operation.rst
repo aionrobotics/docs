@@ -99,8 +99,8 @@ After changing a parameter, you must select **"Write"** to save the parameter to
 
  5.2 As the aircraft makes contact with the ground, quickly move the throttle all the way down and to the right until it disarms and the props come to a stop.
 
- 6. Auto Takeoff
- ---------------
+6. Auto Takeoff
+---------------
 
  .. warning:: To ensure stable operation, do not fly near tree’s or tall structures that can block the vehicles line of sight to GPS satellites.
 
