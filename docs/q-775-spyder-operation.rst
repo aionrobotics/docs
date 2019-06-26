@@ -39,9 +39,7 @@ Password: ``aionrobotics``
 
 The Q-775 Spyder is equipped with a RealSense D435i 3D Depth sensor and configured to avoid objects at a distance of **5 meters**.
 
-.. warning:: The sensor is highly sensitive to changing light conditions. This can cause anomalies such as false positives and missed objects. Users should manunally test its sensitivity under varying conditions and never adopt a sense of false security.
-
-- Tall grass or objects within the 5 meter detection zone will prevent the aircraft from arming.
+.. warning:: The sensor is highly sensitive to changing light conditions. This can cause anomalies such as false positives and missed objects. Users should manunally test its sensitivity under varying conditions and never adopt a sense of false security. Tall grass or objects within the 5 meter detection zone will prevent the aircraft from arming.
 
 To change parameters, go to Mission Planners **CONFIG/TUNING** screen, select **"Full Parameter Tree"** and search for the below parameters.
 
