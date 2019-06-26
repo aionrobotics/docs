@@ -79,7 +79,7 @@ After changing a parameter, you must select **"Write"** to save the parameter to
 
   4.3  To arm the aircraft, hold the left control stick fully down and to the right.
 
-  .. tip:: If the aircraft will not arm please see: `[Understanding ArduPilot mandatory onboard pre-arm safety checks] <http://ardupilot.org/copter/docs/prearm_safety_check.html>`_
+    .. tip:: If the aircraft will not arm please see: `[Understanding ArduPilot mandatory onboard pre-arm safety checks] <http://ardupilot.org/copter/docs/prearm_safety_check.html>`_
 
   4.4 The aircraft will arm and props will start spinning.
 
@@ -87,7 +87,7 @@ After changing a parameter, you must select **"Write"** to save the parameter to
 
   4.6 Move SWD to the down position to raise landing gear.
 
-  .. tip:: The highest risk of a crash is just before and after takeoff, when in close proximity to the ground.
+    .. tip:: The highest risk of a crash is just before and after takeoff, when in close proximity to the ground.
 
 
 5. Manual Landing
@@ -119,7 +119,7 @@ After changing a parameter, you must select **"Write"** to save the parameter to
 
   6.5 When you switch the aircraft into `AUTO` flight mode, the vehicle will Arm itself, take off and proceed with the mission.
 
-  .. tip:: You can change flight modes at any time during an Auto mission to regain control of the aircraft.
+    .. tip:: You can change flight modes at any time during an Auto mission to regain control of the aircraft.
 
 7. Auto Landing
 ---------------
