@@ -66,23 +66,23 @@ After changing a parameter, you must select **"Write"** to save the parameter to
 4. Battery
 ----------
 
-**The Q-775 Spyder will automatically switch to RTL when the battery voltage reaches 22.2 volts.**
-
 Flight time is roughly 35 minutes at 5200' AMSL with no payload.
+
+**The Q-775 Spyder will automatically switch to RTL when the battery voltage reaches 22.2 volts. This margin is set exceptionally high, leaving roughly 15min before the aircraft must land at 21v.**
 
 If appropriate, you may reduce this reserve or modify battery failsafe behavior by changing:
 
 +----------------------+--------------+------------------+
 | ArduPilot Parameter  | Setting      | Function         |
 +======================+==============+==================+
-| BATT_LOW_VOLT        |  Min 19v     | Failsafe Voltage |
+| BATT_LOW_VOLT        |  Min 21v     | Failsafe Voltage |
 +----------------------+--------------+------------------+
 | BATT_FS_LOW_ACT      | 2            | RTL              |
 +----------------------+--------------+------------------+
 | BATT_FS_LOW_ACT      | 1            | Land             |
 +----------------------+--------------+------------------+
 
-  .. warning:: **Do NOT fly below 19v!**
+  .. warning:: **Do NOT fly below 21v!**
 
 5. Manual Takeoff
 -----------------
