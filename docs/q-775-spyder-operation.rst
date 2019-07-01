@@ -93,7 +93,7 @@ If appropriate, you may reduce this reserve or modify battery failsafe behavior 
 
   .. warning:: Never change vehicle parameters unless you are fully aware of their function and consequences!
 
-  .. tip:: In case of sudden irratic or unintended behavior, always be prepared to change the flight mode to **ALTIDUDE HOLD** to manually take control of the aircraft. This mode does not rely on GPS or the onboard Compass.
+  .. tip:: In case of sudden erratic or unintended behavior, always be prepared to change the flight mode to **ALTIDUDE HOLD** to manually take control of the aircraft. This mode does not rely on GPS or the onboard Compass.
 
   4.1 Always perform a `[Pre-Flight Check] <https://docs.aionrobotics.com/en/dev/q-775-spyder-pre-flight-checklist.html>`_
 
@@ -117,7 +117,7 @@ If appropriate, you may reduce this reserve or modify battery failsafe behavior 
 
   6.1 **Slowly and softly land the aircraft on level ground making sure to prevent lateral movement as it touches down.**
 
-  6.2 As the aircraft makes contact with the ground, quickly move the throttle all the way down and to the right until it disarms and the props come to a stop.
+  6.2 As the aircraft makes contact with the ground, quickly move the throttle all the way down and to the left until it disarms and the props come to a stop.
 
 7. Auto Takeoff
 ---------------
@@ -128,7 +128,7 @@ If appropriate, you may reduce this reserve or modify battery failsafe behavior 
 
   .. warning:: **Never** change vehicle parameters unless you are fully aware of their function and consequences!
 
-  .. tip:: In case of sudden irratic or unintended behavior, always be prepared to change the flight mode to **ALTIDUDE HOLD** and manually take control of the aircraft. This mode does not rely on GPS or the onboard Compass.
+  .. tip:: In case of sudden erratic or unintended behavior, always be prepared to change the flight mode to **ALTIDUDE HOLD** and manually take control of the aircraft. This mode does not rely on GPS or the onboard Compass.
 
 
   7.1 Always perform a `[Pre-Flight Check] <https://docs.aionrobotics.com/en/dev/q-775-spyder-pre-flight-checklist.html>`_
@@ -138,8 +138,10 @@ If appropriate, you may reduce this reserve or modify battery failsafe behavior 
   7.3 **Write** the waypoints to the vehicle.
 
   7.4 Select **"Read Waypoints"** to verify the mission uploaded successfully.
+  
+  7.5 To arm the aircraft, hold the left control stick fully down and to the right. Or use Mission Planners button to arm. 
 
-  7.5 When you switch the aircraft into `AUTO` flight mode, the vehicle will Arm itself, take off and proceed with the mission.
+  7.5 Switch the aircraft into `AUTO` flight mode from the controller or by using Mission Planner, the aircraft will then take off and proceed with the mission.
 
     .. tip:: You can change flight modes at any time during an Auto mission to regain control of the aircraft.
 
