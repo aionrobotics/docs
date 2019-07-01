@@ -76,6 +76,6 @@ The included FrySky i6S transmitter and FS-IA6B receiver come pre-configured fro
    <tr><th>Symbol</th><th>Definition</th></tr>
    <tr><td>-</td><td>Manual control</td><tr>
    <tr><td>+</td><td>Manual control with limits & self-level</td><tr>
-   <tr><td>P</td><td>Pilot controls climb rate</td></tr>
+   <tr><td>P</td><td>Pilot controls climb rate/position target</td></tr>
    <tr><td>A</td><td>Automatic control</td></tr>
    </table>
