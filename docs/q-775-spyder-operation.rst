@@ -28,7 +28,7 @@ Password: ``aionrobotics``
 
   2.2.	Open Mission Planner, select UDP in the upper right hand corner and click “Connect”.
 
-  2.3.  Choose port `14558`.
+  2.3.  Choose port `14668`. (Single device)
 
   2.3.	The GCS and Autopilot module will establish a connection.
 
@@ -39,7 +39,9 @@ Password: ``aionrobotics``
 
 The Q-775 Spyder is equipped with a RealSense D435i 3D Depth sensor and configured to avoid objects at a distance of **5 meters**.
 
-  .. warning:: The sensor is highly sensitive to changing light conditions. This can cause anomalies such as false positives and missed objects. Users should manunally test its sensitivity under varying conditions and never adopt a sense of false security. Tall grass or objects within the 5 meter detection zone will prevent the aircraft from arming.
+  .. warning:: The sensor is highly sensitive to changing light conditions. This can cause anomalies such as false positives and missed objects. Pilots should manunally test its sensitivity under varying conditions and never adopt a sense of false security.
+
+  .. note:: Tall grass or objects within the 5 meter detection zone will prevent the aircraft from arming.
 
 To change parameters, go to Mission Planners **CONFIG/TUNING** screen, select **"Full Parameter Tree"** and search for the below parameters.
 
@@ -61,8 +63,27 @@ After changing a parameter, you must select **"Write"** to save the parameter to
 
   .. tip:: To visualize the detection zone in Mission Planner press `Cntrl-F` and select `Proximity`.
 
+4. Battery
+----------
 
-4. Manual Takeoff
+**The Q-775 Spyder will automatically switch to RTL when the battery voltage reaches 22.2 volts.**
+
+Flight time is roughly 35 minutes at 5200' AMSL with no payload.
+
+You may reduce this reserve or change battery failsafe behavior by changing:
++----------------------+--------------+------------------+
+| ArduPilot Parameter  | Setting      | Function         |
++======================+==============+==================+
+| BATT_LOW_VOLT        |  Min 19v     | Failsafe Voltage |
++----------------------+--------------+------------------+
+| BATT_FS_LOW_ACT      | 2            | RTL              |
++----------------------+--------------+------------------+
+| BATT_FS_LOW_ACT      | 1            | Land             |
++----------------------+--------------+------------------+
+
+  .. warning:: **Do not fly below 19v**
+
+5. Manual Takeoff
 -----------------
 
   .. warning:: To ensure stable operation, do not fly near tree’s or tall structures that can block the vehicles line of sight to GPS satellites.
@@ -71,33 +92,33 @@ After changing a parameter, you must select **"Write"** to save the parameter to
 
   .. warning:: Never change vehicle parameters unless you are fully aware of their function and consequences!
 
-  .. tip:: In case of sudden irratic or unintended behavior, always be prepared to change the flight mode to **ALTIDUDE HOLD** and manually take control of the aircraft. This mode does not rely on GPS or the onboard Compass.
+  .. tip:: In case of sudden irratic or unintended behavior, always be prepared to change the flight mode to **ALTIDUDE HOLD** to manually take control of the aircraft. This mode does not rely on GPS or the onboard Compass.
 
   4.1 Always perform a `[Pre-Flight Check] <https://docs.aionrobotics.com/en/dev/q-775-spyder-pre-flight-checklist.html>`_
 
-  4.2 Put the aircraft in `LOITER` flight moode.
+  5.2 Put the aircraft in `LOITER` flight moode.
 
-  4.3  To arm the aircraft, hold the left control stick fully down and to the right.
+  5.3  To arm the aircraft, hold the left control stick fully down and to the right.
 
     .. tip:: If the aircraft will not arm please see: `[Understanding ArduPilot mandatory onboard pre-arm safety checks] <http://ardupilot.org/copter/docs/prearm_safety_check.html>`_
 
-  4.4 The aircraft will arm and props will start spinning.
+  5.4 The aircraft will arm and props will start spinning.
 
-  4.5 To take off, quickly raise the throttle and release when the aircraft reaches desired elevation.
+  5.5 To take off, quickly raise the throttle and release when the aircraft reaches desired elevation.
 
-  4.6 Move SWD to the down position to raise landing gear.
+  5.6 Move SWD to the down position to raise landing gear.
 
     .. tip:: The highest risk of a crash is just before and after takeoff, when in close proximity to the ground.
 
 
-5. Manual Landing
+6. Manual Landing
 -----------------
 
-  5.1 **Slowly and softly land the aircraft on level ground making sure to prevent lateral movement as it touches down.**
+  6.1 **Slowly and softly land the aircraft on level ground making sure to prevent lateral movement as it touches down.**
 
-  5.2 As the aircraft makes contact with the ground, quickly move the throttle all the way down and to the right until it disarms and the props come to a stop.
+  6.2 As the aircraft makes contact with the ground, quickly move the throttle all the way down and to the right until it disarms and the props come to a stop.
 
-6. Auto Takeoff
+7. Auto Takeoff
 ---------------
 
   .. warning:: To ensure stable operation, do not fly near tree’s or tall structures that can block the vehicles line of sight to GPS satellites.
@@ -109,25 +130,25 @@ After changing a parameter, you must select **"Write"** to save the parameter to
   .. tip:: In case of sudden irratic or unintended behavior, always be prepared to change the flight mode to **ALTIDUDE HOLD** and manually take control of the aircraft. This mode does not rely on GPS or the onboard Compass.
 
 
-  6.1 Always perform a `[Pre-Flight Check] <https://docs.aionrobotics.com/en/dev/q-775-spyder-pre-flight-checklist.html>`_
+  7.1 Always perform a `[Pre-Flight Check] <https://docs.aionrobotics.com/en/dev/q-775-spyder-pre-flight-checklist.html>`_
 
-  6.2 Create a waypoint mission using Mission Planner. `[For detailed info see here] <http://ardupilot.org/copter/docs/common-mission-planning.html>`_
+  7.2 Create a waypoint mission using Mission Planner. `[For detailed info see here] <http://ardupilot.org/copter/docs/common-mission-planning.html>`_
 
-  6.3 **Write** the waypoints to the vehicle.
+  7.3 **Write** the waypoints to the vehicle.
 
-  6.4 Select **"Read Waypoints"** to verify the mission uploaded successfully.
+  7.4 Select **"Read Waypoints"** to verify the mission uploaded successfully.
 
-  6.5 When you switch the aircraft into `AUTO` flight mode, the vehicle will Arm itself, take off and proceed with the mission.
+  7.5 When you switch the aircraft into `AUTO` flight mode, the vehicle will Arm itself, take off and proceed with the mission.
 
     .. tip:: You can change flight modes at any time during an Auto mission to regain control of the aircraft.
 
-7. Auto Landing
+8. Auto Landing
 ---------------
 
-  7.1 If configured to do so within your mission, the aircraft will land itself at the location you specified.
+  8.1 If configured to do so within your mission, the aircraft will land itself at the location you specified.
 
 
-8.	Advanced Software Control
+9.	Advanced Software Control
 -----------------------------
 
 You can SSH to access the onboard computer:
