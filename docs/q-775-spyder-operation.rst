@@ -70,7 +70,8 @@ After changing a parameter, you must select **"Write"** to save the parameter to
 
 Flight time is roughly 35 minutes at 5200' AMSL with no payload.
 
-You may reduce this reserve or change battery failsafe behavior by changing:
+If appropriate, you may reduce this reserve or modify battery failsafe behavior by changing:
+
 +----------------------+--------------+------------------+
 | ArduPilot Parameter  | Setting      | Function         |
 +======================+==============+==================+
@@ -81,7 +82,7 @@ You may reduce this reserve or change battery failsafe behavior by changing:
 | BATT_FS_LOW_ACT      | 1            | Land             |
 +----------------------+--------------+------------------+
 
-  .. warning:: **Do not fly below 19v**
+  .. warning:: **Do NOT fly below 19v!**
 
 5. Manual Takeoff
 -----------------
