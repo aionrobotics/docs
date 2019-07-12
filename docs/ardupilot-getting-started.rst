@@ -4,10 +4,15 @@ Getting Started
 
 .. warning:: *** DANGER!! IMPORTANT!! MUST READ FIRST!! ***
 
+Use caution during setup and operation!
+
+Due to the highly sensitive, open and modifiable nature of robotics systems please note that this system is sold for Research and Development purposes and "AS-IS".
+
+**AION ROBOTICS MAKES NO REPRESENTATION AND EXTENDS NO WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED. IN PARTICULAR, BUT WITHOUT LIMITATION, AION ROBOTICS MAKES NO REPRESENTATION AND EXTENDS NO WARRANTY CONCERNING WHETHER THIS PRODUCT IS FIT FOR ANY PARTICULAR PURPOSE.**
+
 All products go through a thorough quality assurance inspection before shipping. However, during the rigors of shipping, damage, loosening and/or shifting of bolts and other hardware can occur.
 
-
-To ensure safe functioning of your UGV please complete a pre-operational inspection immediately upon opening the shipping box. If you suspect damage, take pictures of both the damage and shipping box then notify the shipping carrier and Aion Robotics.
+To ensure proper function of your system please complete a pre-operational inspection immediately upon opening the package. If you suspect damage, take pictures of both the damage and shipping box then notify the shipping carrier and AION ROBOTICS.
 
 **All vehicles are shipped from AION ROBOTICS fully preconfigured. You must only follow the calibration procedure and operational guides. All other materials are for informational purposes only.**
 
