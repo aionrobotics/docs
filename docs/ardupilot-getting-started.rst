@@ -6,7 +6,7 @@ Getting Started
 
 Use caution during setup and operation!
 
-Due to the highly sensitive, open and modifiable nature of robotics systems please note that this system is sold for Research and Development purposes and "AS-IS".
+Due to the highly sensitive, open and modifiable nature of robotics systems please note that this system is sold "AS-IS" for Research and Development purposes.
 
 **AION ROBOTICS MAKES NO REPRESENTATION AND EXTENDS NO WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED. IN PARTICULAR, BUT WITHOUT LIMITATION, AION ROBOTICS MAKES NO REPRESENTATION AND EXTENDS NO WARRANTY CONCERNING WHETHER THIS PRODUCT IS FIT FOR ANY PARTICULAR PURPOSE.**
 
