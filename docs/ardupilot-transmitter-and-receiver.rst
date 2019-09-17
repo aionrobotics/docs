@@ -108,15 +108,6 @@ The included FrySky i6S transmitter and FS-X6B receiver come pre-bound from the 
 
 7.	On the Home Screen, verify each “FLY MODE” by moving SWB from UPPER, CENTER and LOWER position. (MODE 1: MANUAL, MODE 2: GUIDED, MODE 3: AUTO)
 
-.. image:: ../images/transmitter/MODE_MANUAL.jpg
-    :width: 220
-.. image:: ../images/transmitter/MODE_GUIDED.jpg
-    :width: 220
-.. image:: ../images/transmitter/MODE_AUTO.jpg
-    :width: 220
-..
-
-
 
 8.	Setup – Auxiliary Button (Used to store Waypoint)
 -----------------------------------------------------
