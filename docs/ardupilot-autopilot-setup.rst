@@ -48,12 +48,10 @@ Due to popularity, we recommend using Mission Planner for Windows or QGround Con
 
   1.	**Parameter File**
 
-.. tip:: **R1 UGVs come with parameters preconfigured. This is for informational purposes only. Please skip to calibration.**
+.. tip:: **R1 UGVs come with firmware and parameters pre-installed and configured. This is for informational purposes only. Please skip to calibration.**
 
-    1.1.	R1 Parameter files can be found on GitHub: `[ArduPilot Package] <https://github.com/ArduPilot/ardupilot/blob/master/Tools/Frame_params/AION_R1_Rover.param>`_
+    1.1.	R1 Parameter files and firmware can be obtained by customers by emailing info@aionrobotics.com
 
-.. tip:: Unless you specifically need the Parameter file, you can automatically install it directly through Mission Planner as described below.
-..
 
   2.	**Mission Planner GCS**
 
@@ -79,15 +77,9 @@ Due to popularity, we recommend using Mission Planner for Windows or QGround Con
 
     3.3.	Select **“Full Parameter Tree”**
 
-    3.4.	Select **“AION_R1”** from the drop down window on the right
+    3.4.	Select **“Load from file”**
 
-.. image:: ../images/R1Parameters.PNG
-    :width: 800
-..
-
-    3.5.	Click **"Load Presaved"**.
-
-    3.6.	Select **“Check All"** & **"Continue”**
+    3.6.	Select your parameter file
 
     3.7.  Select **"Write Params"**
 
