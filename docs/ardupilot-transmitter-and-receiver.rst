@@ -2,7 +2,7 @@
 Transmitter and Receiver
 ========================
 
-The included FrySky i6S transmitter and FS-IA6B receiver come pre-bound from the factory but you will need to perform the following setup procedure to ensure proper functioning with ArduRover firmware/Parameter list.
+The included FrySky i6S transmitter and FS-X6B receiver come pre-bound from the factory but you will need to perform the following setup procedure to ensure proper functioning with AION ROBOTICS autopilot firmware configuration..
 
 .. image:: ../images/transmitter/FrySky_i6S.jpg
     :scale: 50%
@@ -88,7 +88,7 @@ The included FrySky i6S transmitter and FS-IA6B receiver come pre-bound from the
 
   6.4.	Setup “GUIDED” as pictured
 
-.. image:: ../images/transmitter/SETUP_STEER.jpg
+.. image:: ../images/transmitter/SETUP_GUIDED.jpg
     :width: 350
     :align: center
 ..
@@ -110,7 +110,7 @@ The included FrySky i6S transmitter and FS-IA6B receiver come pre-bound from the
 
 .. image:: ../images/transmitter/MODE_MANUAL.jpg
     :width: 220
-.. image:: ../images/transmitter/MODE_STEER.jpg
+.. image:: ../images/transmitter/MODE_GUIDED.jpg
     :width: 220
 .. image:: ../images/transmitter/MODE_AUTO.jpg
     :width: 220

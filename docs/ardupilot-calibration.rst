@@ -34,19 +34,11 @@ Calibration
 -----------------------
   3.1.	Select **“Compass”** under the **“INITIAL SETUP -> Mandatory Hardware”** tabs.
 
-  3.2.	Verify the settings are as pictured:
+  3.2.	Find an outdoor area, clear of power lines and ferrous objects that will cause magnetic interference. (This includes metallic objects on your person)
 
-.. image:: ../images/Compass.PNG
-    :width: 800
-    :align: center
-..
+  3.3.	Select “Start” in the “Onboard Mag Calibration” window and you will hear the Autopilot beep to signal calibration has started. (This will not work if the rover is Armed/Safety off)
 
-
-  3.3.	Find an outdoor area, clear of power lines and ferrous objects that will cause magnetic interference. (This includes metallic objects on your person)
-
-  3.4.	Select “Start” in the “Onboard Mag Calibration” window and you will hear the Autopilot beep to signal calibration has started. (This will not work if the rover is Armed/Safety off)
-
-  3.5.	To begin calibration, you must pick the rover up and spin it 360 degrees around each axis until the green bar next to “Mag 1” shows full and the GCS alerts you of a successful calibration.
+  3.4.	To begin calibration, you must pick the rover up and spin it 360 degrees around each axis until the green bar next to “Mag 1” shows full and the GCS alerts you of a successful calibration.
 
 .. caution:: Be careful not to drop the rover! You may want to enlist the help of another person!
 ..
