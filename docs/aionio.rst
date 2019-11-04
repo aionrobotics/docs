@@ -307,7 +307,6 @@ To disaple CherryPy simply remove this line from ``/etc/rc.local``:
     sudo -H -u aion /bin/bash -c '~aion/start_cherrypy/autostart_cherrypy.sh'
 
 To change the port edit the file ``~/start_cherrypy/apsync.py`` by changing line 42 ``self.port = 8080`` to another port like 8050:
-
 ::
     def __init__(self):
         self.port = 8050
