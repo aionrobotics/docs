@@ -331,7 +331,6 @@ Follow the steps to create a `new robot <https://docs.aws.amazon.com/robomaker/l
 Once you have downloaded the credentials from step 12, copy the file over to the robot and unzip using the command provided in that step.
 
 You are now ready to start greengrass on your robot by running the following commands:
-
 ::
     cd /greengrass/ggc/core
     sudo ./greengrassd start
