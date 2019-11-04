@@ -303,11 +303,12 @@ The next step installs the security certificates to run Greengrass on your devic
 
 Before starting greengrass you will need to disable or change the port of the CherryPy server used to control the video streaming. 
 To disaple CherryPy simply remove this line from ``/etc/rc.local``:
-``sudo -H -u aion /bin/bash -c '~aion/start_cherrypy/autostart_cherrypy.sh'``
+::
+    sudo -H -u aion /bin/bash -c '~aion/start_cherrypy/autostart_cherrypy.sh'
 
-To change the port edit the file ``~/start_cherrypy/apsync.py`` by changing line 42 `` self.port = 8080 `` to another port like 8050:
+To change the port edit the file ``~/start_cherrypy/apsync.py`` by changing line 42 ``self.port = 8080`` to another port like 8050:
 
-```
+::
     def __init__(self):
         self.port = 8050
         self.host = '0.0.0.0'
@@ -316,13 +317,13 @@ To change the port edit the file ``~/start_cherrypy/apsync.py`` by changing line
         self.streaming_pid = None
         self.streaming_error = None
         self.streaming_to_ip = None
-```
 
 This will eliminate the port conflict with GGC as it also uses port 8000
 
 
-Configure AWS Robomaker Fleetmanagment to deploy to your robot
---------------------------------------------------------------
+Configure AWS Robomaker fleet managment to deploy to your robot
+---------------------------------------------------------------
+
 For configuring Robomaker to deploy your applications to your robot, refer to the following pages:
 `AWS Robomaker Fleetmanagement <https://docs.aws.amazon.com/robomaker/latest/dg/fleets.html>`_ 
 
@@ -332,10 +333,10 @@ Once you have downloaded the credentials from step 12, copy the file over to the
 
 You are now ready to start greengrass on your robot by running the following commands:
 
-```
-cd /greengrass/ggc/core
-sudo ./greengrassd start
-```
+::
+    cd /greengrass/ggc/core
+    sudo ./greengrassd start
+
 Then follow the steps to `create a fleet <https://docs.aws.amazon.com/robomaker/latest/dg/create-fleet.html>`_ and `register your robot to your fleet <https://docs.aws.amazon.com/robomaker/latest/dg/register-deregister-fleet.html>`_ 
 
 Congratulations, your robot should now be connected to AWS Robomaker and be ready to receive deployments.
