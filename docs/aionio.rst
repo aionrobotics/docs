@@ -272,6 +272,75 @@ Video streaming is *enabled* by default.
 
 .. tip:: To access the control panel, type ``10.0.1.128:8000`` into a connected devices web browser.
 
+AWS Integration
+---------------
+
+AIONio includes some utilities to make integration with AWS systems easier. AWS provides several services that are useful for robotics like AWS Robomaker, and AWS Cloudwatch.
+AIONio comes with AWSCli, and AWS Greengrass preinstalled and ready for the user to add its own credentials to make it work with their own AWS account.
+
+Configuring AWS GreenGrass
+--------------------------
+
+AWS Greengrass is installed in the default folder in ``/greengrass``
+
+To setup AWS Greengrass you will need to create an account and create the greengrass certificates. You can find information on doing that here:
+
+`AWS Greengrass Getting Started <https://docs.aws.amazon.com/greengrass/latest/developerguide/gg-gs.html>`_ 
+
+Once you have created your account the next step is to configure your device, this steps have already been preformed on the device and the software is already installed:
+
+`Setting up your Device for GreenGrass <https://docs.aws.amazon.com/greengrass/latest/developerguide/setup-filter.other.html>`_ 
+
+`Installing the AWS IoT Greengrass Core Software <https://docs.aws.amazon.com/greengrass/latest/developerguide/module2.html>`_ 
+
+In order to use AWS Greengrass you need to configure some things on the AWS Console, you can follow this guide to set it up (Skip the step to download the core software to your device as this has already been done):
+
+`Configure AWS IoT Greengrass on AWS IoT <https://docs.aws.amazon.com/greengrass/latest/developerguide/gg-config.html>`_ 
+
+The next step installs the security certificates to run Greengrass on your device, Robomaker creates these security certificates when you create a robot in the fleetmanagement, you only need to do step 5 of this guide at this point:
+
+`Start AWS IoT Greengrass on the Core Device <https://docs.aws.amazon.com/greengrass/latest/developerguide/gg-device-start.html>`_
+
+Before starting greengrass you will need to disable or change the port of the CherryPy server used to control the video streaming. 
+To disaple CherryPy simply remove this line from ``/etc/rc.local``:
+``sudo -H -u aion /bin/bash -c '~aion/start_cherrypy/autostart_cherrypy.sh'``
+
+To change the port edit the file ``~/start_cherrypy/apsync.py`` by changing line 42 `` self.port = 8080 `` to another port like 8050:
+
+```
+    def __init__(self):
+        self.port = 8050
+        self.host = '0.0.0.0'
+
+        self.streaming = False
+        self.streaming_pid = None
+        self.streaming_error = None
+        self.streaming_to_ip = None
+```
+
+This will eliminate the port conflict with GGC as it also uses port 8000
+
+
+Configure AWS Robomaker Fleetmanagment to deploy to your robot
+--------------------------------------------------------------
+For configuring Robomaker to deploy your applications to your robot, refer to the following pages:
+`AWS Robomaker Fleetmanagement <https://docs.aws.amazon.com/robomaker/latest/dg/fleets.html>`_ 
+
+Follow the steps to create a `new robot <https://docs.aws.amazon.com/robomaker/latest/dg/create-robot.html>`_ 
+
+Once you have downloaded the credentials from step 12, copy the file over to the robot and unzip using the command provided in that step.
+
+You are now ready to start greengrass on your robot by running the following commands:
+
+```
+cd /greengrass/ggc/core
+sudo ./greengrassd start
+```
+Then follow the steps to `create a fleet <https://docs.aws.amazon.com/robomaker/latest/dg/create-fleet.html>`_ and `register your robot to your fleet <https://docs.aws.amazon.com/robomaker/latest/dg/register-deregister-fleet.html>`_ 
+
+Congratulations, your robot should now be connected to AWS Robomaker and be ready to receive deployments.
+
+
 Factory Reset
 -------------
 
